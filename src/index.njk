@@ -6,7 +6,11 @@ eleventyNavigation:
 ---
 
 <div class="container">
-  
-    <h1>Michelle Clement</h1>
-    
+  <h1>Michelle Clement Portfolio</h1>
 </div>
+
+<section class="container">
+  <h2>Work</h2>
+  {% set postslist = collections.posts %}
+  {% include "postslist.njk" %}
+</section>
