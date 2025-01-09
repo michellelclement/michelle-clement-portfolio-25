@@ -1,0 +1,33 @@
+@use '../2-design-tokens/mixins' as *;
+@use '../6-skeleton/grid' as *;
+@use '../2-design-tokens/functions' as *;
+@use '../2-design-tokens/spacing' as *;
+@use '../2-design-tokens/media-queries' as *;
+
+.list-text {
+  @include container;
+}
+
+.list-text__container {
+  @include verticalPadding;
+  @include grid;
+  @include rowGap(calc(#{$gtr} * 2));
+}
+
+.list-text__header {
+  grid-column: 1 / span 12;
+  @include media($m-screen-up) {
+    grid-column: 6 / span 6;
+  }
+}
+
+.list-text__items {
+  grid-column: 1 / span 12;
+  @include media($m-screen-up) {
+    grid-column: 6 / span 6;
+  }
+}
+
+.list-text__dates {
+  padding: $gtr 0 calc(#{$gtr} * 2) 0;
+}
