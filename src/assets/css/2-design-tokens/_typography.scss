@@ -5,6 +5,13 @@
  /**
   * Fluid type scale based on Utopia (https://utopia.fyi)
   */
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  line-height: 1;
+  font-weight: 400;
+}
+
  :root {
     --fluid-min-width: 320;
     --fluid-max-width: 1500;

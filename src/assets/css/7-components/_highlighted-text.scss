@@ -1,0 +1,31 @@
+@use '../2-design-tokens/mixins' as *;
+@use '../6-skeleton/grid' as *;
+@use '../2-design-tokens/functions' as *;
+@use '../2-design-tokens/spacing' as *;
+@use '../2-design-tokens/media-queries' as *;
+
+.highlighted-text {
+  @include container;
+  overflow-y: clip;
+}
+
+.highlighted-text__container {
+  @include grid;
+  @include rowGap($gtr);
+  @include verticalPadding;
+}
+
+.highlighted-text__heading {
+  grid-column: 1 / span 11;
+  @include media($m-screen-up) {
+    grid-column: 2 / span 11;
+  }
+}
+
+.highlighted-text__copy {
+  grid-column: 1 / span 11;
+  
+  @include media($m-screen-up) {
+    grid-column: 2 / span 9;
+  }
+}
