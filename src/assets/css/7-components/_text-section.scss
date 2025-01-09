@@ -1,27 +1,33 @@
+@use '../2-design-tokens/mixins' as *;
+@use '../6-skeleton/grid' as *;
+@use '../2-design-tokens/functions' as *;
+@use '../2-design-tokens/spacing' as *;
+@use '../2-design-tokens/media-queries' as *;
+
 .text-section {
   @include container;
-  position: relative;
+  // position: relative;
 }
 
-// .text-section__container {
-//   @include grid;
-//   @include verticalPadding;
-//   @include rowGap(calc(#{$gtr} * 2));
-//   @include media($m-screen-up) {
-//     @include rowGap(calc(#{$gtr} * 3));
-//   }
-// }
+.text-section__container {
+  @include grid;
+  @include verticalPadding;
+  @include rowGap(calc(#{$gtr} * 2));
+  @include media($m-screen-up) {
+    @include rowGap(calc(#{$gtr} * 3));
+  }
+}
 
-// .text-section__intro {
-//   grid-column: 1 / span 12;
-//   @include media($m-screen-up) {
-//     grid-column: 4 / span 8;
-//   }
-// }
+.text-section__intro {
+  grid-column: 1 / span 12;
+  @include media($m-screen-up) {
+    grid-column: 4 / span 8;
+  }
+}
 
-// .text-section__copy {
-//   grid-column: 1 / span 12;
-//   @include media($m-screen-up) {
-//     grid-column: 6 / span 6;
-//   }
-// }
+.text-section__copy {
+  grid-column: 1 / span 12;
+  @include media($m-screen-up) {
+    grid-column: 6 / span 6;
+  }
+}
