@@ -1,0 +1,33 @@
+@use '../2-design-tokens/mixins' as *;
+@use '../6-skeleton/grid' as *;
+@use '../2-design-tokens/functions' as *;
+@use '../2-design-tokens/spacing' as *;
+@use '../2-design-tokens/media-queries' as *;
+@use '../2-design-tokens/typography' as *;
+
+// .columns__container {
+//   @include container;
+// }
+
+.columns__grid {
+  @include grid(3);
+  @include colGap(calc($gtr *4));
+}
+
+.column__item {
+  @include col(1);
+  @include flowV;
+  text-align: center;
+  position: relative; // Required for pseudo-elements
+
+    // Add vertical line to the right of each column except the last one
+    &:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -40px; // Center the line in the column gap
+      bottom: 0;
+      width: 1px; // Line thickness
+      background-color: red; // Line color
+    }
+}
