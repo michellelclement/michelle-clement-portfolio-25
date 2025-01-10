@@ -26,3 +26,9 @@
     padding-bottom: calc(#{$gtr} * 5);
   }
 }
+
+@mixin flowV($val: $gtr) {
+  > * + * {
+    margin-top: $val;
+  }
+}
