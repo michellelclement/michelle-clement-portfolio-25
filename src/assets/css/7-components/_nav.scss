@@ -4,8 +4,8 @@
 @use '../2-design-tokens/spacing' as *;
 @use '../2-design-tokens/media-queries' as *;
 
-.header__container {
-  @include container;
+.nav__menu {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  gap: $gtr;
 }
