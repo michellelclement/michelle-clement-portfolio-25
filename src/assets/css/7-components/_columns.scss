@@ -5,10 +5,6 @@
 @use '../2-design-tokens/media-queries' as *;
 @use '../2-design-tokens/typography' as *;
 
-// .columns__container {
-//   @include container;
-// }
-
 .columns__grid {
   @include grid(3);
   @include colGap(calc($gtr *4));

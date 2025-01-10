@@ -4,10 +4,6 @@
 @use '../2-design-tokens/spacing' as *;
 @use '../2-design-tokens/media-queries' as *;
 
-.list-text {
-  @include container;
-}
-
 .list-text__container {
   @include verticalPadding;
   @include grid;

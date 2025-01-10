@@ -5,7 +5,6 @@
 @use '../2-design-tokens/media-queries' as *;
 
 .footer {
-  @include container;
   width: 100%;
 }
 

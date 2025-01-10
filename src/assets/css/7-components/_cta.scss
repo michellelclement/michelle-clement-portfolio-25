@@ -20,10 +20,6 @@
   }
 }
 
-.cta__container {
-  @include container;
-}
-
 .cta__container p {
   font-size: rem(60);
   text-align: center;

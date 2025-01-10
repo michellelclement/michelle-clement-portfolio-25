@@ -5,7 +5,6 @@
 @use '../2-design-tokens/media-queries' as *;
 
 .highlighted-text {
-  @include container;
   overflow-y: clip;
 }
 

@@ -5,7 +5,6 @@
 @use '../2-design-tokens/media-queries' as *;
 
 .header__container {
-  @include container;
   display: flex;
   justify-content: space-between;
 }

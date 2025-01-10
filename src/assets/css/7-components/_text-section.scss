@@ -4,10 +4,6 @@
 @use '../2-design-tokens/spacing' as *;
 @use '../2-design-tokens/media-queries' as *;
 
-.text-section {
-  @include container;
-}
-
 .text-section__container {
   @include grid;
   @include verticalPadding;
