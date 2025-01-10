@@ -7,16 +7,35 @@
 
 .columns__grid {
   @include grid(3);
-  @include colGap(calc($gtr *4));
+  @include rowGap(calc($gtr *3));
+
+  @include media($m-screen-up) {
+    
+    @include colGap(calc($gtr *4));
+  }
+  
 }
 
 .column__item {
-  @include col(1);
-  @include flowV;
+  @include col(3);
+  position: relative;
   text-align: center;
-  position: relative; // Required for pseudo-elements
+  @include flowV;
 
-    // Add vertical line to the right of each column except the last one
+  @include media($m-screen-down) {
+    &:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -30px; // Center the line in the row gap
+      right: 0;
+      height: 1px;
+      background-color: red; // Line color
+    }
+  }
+
+  @include media($m-screen-up) {
+    @include col(1);
     &:not(:last-child)::after {
       content: '';
       position: absolute;
@@ -26,4 +45,8 @@
       width: 1px; // Line thickness
       background-color: red; // Line color
     }
+  }
+  
+    // Add vertical line to the right of each column except the last one
+    
 }
