@@ -1,0 +1,28 @@
+@use '../2-design-tokens/functions' as *;
+@use '../2-design-tokens/spacing' as *;
+@use '../2-design-tokens/media-queries' as *;
+
+@mixin container($verticalPadding: $gtr) {
+  position: relative;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: $gtr;
+
+  @include media($m-screen-up) {
+    padding: calc(#{$gtr} * 2);
+  }
+
+  @include media($l-screen-up) {
+    padding-top: $verticalPadding;
+    padding-bottom: $verticalPadding;
+  }
+}
+
+@mixin verticalPadding {
+  padding-top: calc(#{$gtr} * 3);
+  padding-bottom: calc(#{$gtr} * 3);
+  @include media($m-screen-up) {
+    padding-top: calc(#{$gtr} * 5);
+    padding-bottom: calc(#{$gtr} * 5);
+  }
+}

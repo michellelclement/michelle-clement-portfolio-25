@@ -1,11 +1,15 @@
+@use "sass:math";
+
 /* 1. Settings */
 @use 'cssremedy/css/remedy';
 @use "1-settings/global";
 
 /* 2. Design Tokens */
 @use "2-design-tokens/colors";
+@use "2-design-tokens/functions";
 @use "2-design-tokens/fonts";
 @use "2-design-tokens/media-queries";
+@use "2-design-tokens/mixins";
 @use "2-design-tokens/spacing";
 @use "2-design-tokens/typography";
 
@@ -37,6 +41,10 @@
 @use "7-components/header";
 @use "7-components/footer";
 @use "7-components/postlist";
+@use "7-components/text-section";
+@use "7-components/highlighted-text";
+@use "7-components/list-text";
+@use "7-components/work";
 
 
 /* Shame on you! */

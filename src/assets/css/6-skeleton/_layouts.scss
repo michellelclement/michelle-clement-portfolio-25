@@ -1,3 +1,6 @@
+@use '../2-design-tokens/mixins' as *;
+@use '../2-design-tokens/functions' as *;
+@use '../2-design-tokens/media-queries' as *;
 // Main Site Layout
 
 body {
@@ -12,10 +15,13 @@ body {
   position: relative;
 }
 
+
+
 .container {
-  width: 100%;
-  margin: 0 auto;
-  max-width: var(--container-max-width);
-  padding: 2rem 1rem; // fallback
-  padding: 2rem clamp(var(--spacing-medium), 3.75vw, var(--spacing-x-large));
+  @include container;
+  // width: 100%;
+  // margin: 0 auto;
+  // max-width: var(--container-max-width);
+  // padding: 2rem 1rem; // fallback
+  // padding: 2rem clamp(var(--spacing-medium), 3.75vw, var(--spacing-x-large));
 }
