@@ -3,16 +3,20 @@ layout: base
 eleventyNavigation:
   key: Home
   order: 1
+heading1: Michelle
+heading2: Clement
+subHeading: Front End Developer
 openingText: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 mainText: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 highlightedCopy: HTML, CSS/SASS, JavaScript, GSAP, CraftCMS, GitHub, Amazon Web Services, Bootstrap, Twig, Nunjuks, SASS
 cta: Say hello!
 ---
 
-<div class="container">
+{# <div class="container">
   <h1>Michelle Clement Portfolio</h1>
-</div>
+</div> #}
 
+{% include "_partials/hero-home.njk" %}
 {% include "_partials/text-section.njk" %}
 {% include "_partials/work.njk" %}
 {% include "_partials/highlighted-text.njk" %}
