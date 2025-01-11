@@ -4,7 +4,89 @@
 @use '../2-design-tokens/spacing' as *;
 @use '../2-design-tokens/media-queries' as *;
 
+.hero-about {
+  min-height: 75vh;
+}
+
 .hero-about__container {
   @include horizontalContainer;
   margin: unset;
+}
+
+.hero-about__grid {
+  @include grid;
+  @include rowGap(0);
+  container-type: inline-size;
+  padding-top: 0;
+  padding-bottom: calc(#{$gtr} * 3);
+
+  @include media($s-screen-up) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @include media($m-screen-down) {
+    display: block;
+  }
+
+  @include media($m-screen-up) {
+    grid-column: 2 / span 5;
+  }
+
+  @include media($xxl-screen-up) {
+    padding-top: 0;
+  }
+}
+
+.hero-about__header {
+  grid-column: 1 / span 12;
+
+  @include media($m-screen-up) {
+    grid-column: 2 / span 2;
+  }
+}
+
+.hero-about__image {
+  display: flex;
+  justify-content: center;
+  padding-top: calc(#{$gtr} * 2);
+  padding-bottom: calc(#{$gtr} * 2);
+
+  @include media($m-screen-up) {
+    display: block;
+    grid-column: 5 / span 3;
+    padding-bottom: 0;
+    padding-top: 0;
+    grid-row: 2;
+    margin-top: rem(-60);
+  }
+}
+
+.hero-about__cta {
+  grid-row: 3;
+  grid-column: 1 / span 12;
+  padding-bottom: calc(#{$gtr} * 2);
+  
+  @include media($m-screen-up) {
+    grid-column: 9 / span 4;
+    
+  }
+
+  @include media($l-screen-up) {
+    margin-top: rem(-60);
+  }
+
+  p {
+    padding-bottom: $gtr-s;
+  }
+}
+
+.hero-about__button {
+  @include media($m-screen-up) {
+    margin-top: calc(#{$gtr} / 2);
+  }
+}
+
+.hero-about__scroll {
+  padding-bottom: $gtr;
 }
