@@ -1,3 +1,5 @@
+@use '../2-design-tokens/spacing' as *;
+
 ul, ol {
   font-size: var(--fluid-0);
   line-height: 1.5;
@@ -13,12 +15,12 @@ li > {
 
   ul,
   ol {
-    margin-left: var(--spacing-medium);
+    margin-left: $gtr;
     margin-bottom: 0;
   }
 
 }
 
 section.list {
-  margin: var(--spacing-xx-large) 0;
+  margin: $gtr 0;
 }
