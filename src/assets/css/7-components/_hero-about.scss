@@ -3,3 +3,8 @@
 @use '../2-design-tokens/functions' as *;
 @use '../2-design-tokens/spacing' as *;
 @use '../2-design-tokens/media-queries' as *;
+
+.hero-about__container {
+  @include horizontalContainer;
+  margin: unset;
+}

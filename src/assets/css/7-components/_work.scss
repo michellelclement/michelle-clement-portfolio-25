@@ -6,4 +6,5 @@
 
 .work {
   @include verticalPadding;
+  @include horizontalContainer;
 }

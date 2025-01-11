@@ -5,7 +5,8 @@
 @use '../2-design-tokens/media-queries' as *;
 @use '../2-design-tokens/typography' as *;
 
-.columns {
+.columns__container {
+  @include horizontalContainer;
   @include verticalPadding;
 }
 
@@ -13,11 +14,9 @@
   @include grid(3);
   @include rowGap(calc($gtr *3));
 
-  @include media($m-screen-up) {
-    
+  @include media($m-screen-up) { 
     @include colGap(calc($gtr *4));
   }
-  
 }
 
 .column__item {

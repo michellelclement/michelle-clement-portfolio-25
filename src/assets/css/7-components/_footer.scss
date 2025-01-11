@@ -9,12 +9,13 @@
 }
 
 .footer__container {
+  @include horizontalContainer;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: $gtr;
-  padding: calc(#{$gtr} / 3) 0;
+  
   @include media($m-screen-up) {
     flex-direction: row;
   }
