@@ -3,3 +3,7 @@
 @use '../2-design-tokens/functions' as *;
 @use '../2-design-tokens/spacing' as *;
 @use '../2-design-tokens/media-queries' as *;
+
+.work {
+  @include verticalPadding;
+}

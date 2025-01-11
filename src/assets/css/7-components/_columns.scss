@@ -5,6 +5,10 @@
 @use '../2-design-tokens/media-queries' as *;
 @use '../2-design-tokens/typography' as *;
 
+.columns {
+  @include verticalPadding;
+}
+
 .columns__grid {
   @include grid(3);
   @include rowGap(calc($gtr *3));
