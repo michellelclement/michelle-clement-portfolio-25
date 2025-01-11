@@ -1,3 +1,5 @@
+@use '../2-design-tokens/spacing' as *;
+
 @mixin grid($number: 12) {
   display: grid;
   grid-template-columns: repeat($number, 1fr);
