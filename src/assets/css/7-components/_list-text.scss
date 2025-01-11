@@ -5,7 +5,11 @@
 @use '../2-design-tokens/media-queries' as *;
 
 .list-text__container {
+  @include horizontalContainer;
   @include verticalPadding;
+}
+
+.list-text__grid {
   @include grid;
   @include rowGap(calc(#{$gtr} * 2));
 }

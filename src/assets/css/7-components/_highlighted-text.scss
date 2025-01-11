@@ -9,9 +9,13 @@
 }
 
 .highlighted-text__container {
+  @include horizontalContainer;
+  @include verticalPadding;
+}
+
+.highlighted-text__grid {
   @include grid;
   @include rowGap($gtr);
-  @include verticalPadding;
 }
 
 .highlighted-text__heading {
