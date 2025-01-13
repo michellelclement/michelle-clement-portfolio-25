@@ -49,7 +49,9 @@
   will-change: right, opacity;
 }
 
-.button:hover svg {
+.button:hover svg,
+.button:focus svg, 
+.button:active svg {
   opacity: 1;
   right: -2rem;
 }
