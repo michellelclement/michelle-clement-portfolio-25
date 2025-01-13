@@ -1,0 +1,63 @@
+@use '../2-design-tokens/mixins' as *;
+@use '../2-design-tokens/media-queries' as *;
+@use '../2-design-tokens/variables' as *;
+
+.image-oval {
+  min-height: 350px;
+  aspect-ratio: 3/4;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  // overflow: hidden;
+
+  @include media($m-screen-up) {
+    min-height: 400px;
+  }
+}
+
+.image-oval__image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.image-oval__first,
+.image-oval__second,
+.image-oval__third {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1000px;
+}
+
+.image-oval__first {
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: transparent;
+  border: 4px solid $black;
+}
+
+.image-oval__second {
+  top: 4px;
+  left: 4px;
+  z-index: 2;
+  background-color: magenta;
+
+  @include media($m-screen-up) {
+    top: 13px;
+    left: 13px;
+  }
+}
+
+.image-oval__third {
+  top: 12px;
+  left: 12px;
+  z-index: 1;
+  background-color: black;
+  @include media($m-screen-up) {
+    top: 35px;
+    left: 35px;
+  }
+}

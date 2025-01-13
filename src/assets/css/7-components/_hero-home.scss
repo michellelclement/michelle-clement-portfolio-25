@@ -20,7 +20,8 @@
 
 .hero-home__container {
   @include horizontalContainer;
-  @include verticalPadding;
+  padding-top: calc(#{$gtr} * 3);
+  padding-bottom: calc(#{$gtr} * 3);
 }
 
 .hero-home__grid {

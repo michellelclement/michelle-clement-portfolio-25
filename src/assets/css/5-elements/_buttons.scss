@@ -18,7 +18,7 @@
   transition: background-color 300ms ease-out;
   font-size: 20px;
 
-  @include media($m-screen-up) {
+  @include media($xl-screen-up) {
     font-size: 27px;
   }
 }
