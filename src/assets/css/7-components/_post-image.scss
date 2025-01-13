@@ -1,0 +1,25 @@
+@use '../2-design-tokens/mixins' as *;
+@use '../6-skeleton/grid' as *;
+@use '../2-design-tokens/functions' as *;
+@use '../2-design-tokens/spacing' as *;
+@use '../2-design-tokens/media-queries' as *;
+@use '../2-design-tokens/typography' as *;
+
+.post-image__container {
+  @include horizontalContainer;
+  padding-top: calc(#{$gtr} * 3);
+  
+  @include media($m-screen-up) {
+    padding-top: calc(#{$gtr} * 5);
+  }
+}
+
+.post-image__image {
+  aspect-ratio: 4/2.5;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

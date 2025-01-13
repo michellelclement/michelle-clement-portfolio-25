@@ -1,0 +1,34 @@
+@use '../2-design-tokens/mixins' as *;
+@use '../6-skeleton/grid' as *;
+@use '../2-design-tokens/functions' as *;
+@use '../2-design-tokens/spacing' as *;
+@use '../2-design-tokens/media-queries' as *;
+@use '../2-design-tokens/typography' as *;
+
+.post-image-grid__container {
+  @include horizontalContainer;
+  padding-bottom: calc(#{$gtr} * 3);
+  
+  @include media($m-screen-up) {
+    padding-bottom: calc(#{$gtr} * 5);
+  }
+}
+
+.post-image-grid__grid {
+  @include grid;
+  @include colGap($gtr);
+}
+
+.post-image-grid__image {
+  aspect-ratio: 4/2.5;  
+
+  @include media($m-screen-up) {
+    @include col(6);
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
