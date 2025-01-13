@@ -4,7 +4,7 @@
 @use '../2-design-tokens/spacing' as *;
 @use '../2-design-tokens/media-queries' as *;
 
-.work {
+.work__container {
   @include verticalPadding;
   @include horizontalContainer;
 }

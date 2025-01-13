@@ -1,8 +1,16 @@
-.postlist {
-  
-  ol[class] {
-      list-style-type: none;
-      padding: 0;
+@use '../2-design-tokens/mixins' as *;
+@use '../6-skeleton/grid' as *;
+@use '../2-design-tokens/functions' as *;
+@use '../2-design-tokens/spacing' as *;
+@use '../2-design-tokens/media-queries' as *;
+
+.postlist__container {
+  @include grid;
+  @include rowGap(calc($gtr * 3));
+
+  @include media($m-screen-up) {
+    @include colGap(calc($gtr * 3));
+    @include rowGap(calc($gtr * 2));
+    grid-column: 2 / span 5;
   }
 }
-

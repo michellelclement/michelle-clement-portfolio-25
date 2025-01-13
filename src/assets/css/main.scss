@@ -12,6 +12,7 @@
 @use "2-design-tokens/mixins";
 @use "2-design-tokens/spacing";
 @use "2-design-tokens/typography";
+@use "2-design-tokens/index";
 
 /* 3. Tools */
 @use "3-tools/aspect-ratio";
@@ -32,6 +33,7 @@
 @use "5-elements/lists";
 @use "5-elements/paragraphs";
 @use "5-elements/divider";
+@use "5-elements/card";
 
 // 6. Skeleton
 @use "6-skeleton/grid";

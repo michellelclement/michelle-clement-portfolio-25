@@ -1,0 +1,62 @@
+@use '../2-design-tokens/mixins' as *;
+@use '../6-skeleton/grid' as *;
+@use '../2-design-tokens/functions' as *;
+@use '../2-design-tokens/spacing' as *;
+@use '../2-design-tokens/media-queries' as *;
+@use '../2-design-tokens/typography' as *;
+
+.card {
+  border: 3px solid black;
+  // border-radius: 5%;
+  transition: all 500ms;
+  overflow: hidden;
+
+  // &:hover {
+  //   border-radius: 10%;
+  // }
+}
+
+// .card a {
+//   &::after {
+//     content: none;
+//   }
+// }
+
+.card:nth-child(odd) {
+  grid-column: 1 / span 12;
+  @include media($m-screen-up) {
+    grid-column: 1 / span 6;
+  }
+}
+
+.card:nth-child(even) {
+  grid-column: 1 / span 12;
+  @include media($m-screen-up) {
+    grid-column: 7 / span 6;
+  }
+}
+
+.card__image {
+  background-color: black;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card__image--container img {
+  width: 100%;
+}
+
+.card__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__copy {
+  padding: $gtr;
+}
+
+.card__descrip {
+  padding-top: $gtr-xs;
+}
