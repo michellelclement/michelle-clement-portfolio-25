@@ -1,6 +1,7 @@
 @use '../2-design-tokens/functions' as *;
 @use '../2-design-tokens/spacing' as *;
 @use '../2-design-tokens/media-queries' as *;
+@use '../2-design-tokens/variables' as *;
 
 @mixin horizontalContainer {
   position: relative;
@@ -28,4 +29,12 @@
   > * + * {
     margin-top: $val;
   }
+}
+
+@mixin buttonReset {
+  font-family: inherit;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 0;
 }

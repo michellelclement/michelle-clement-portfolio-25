@@ -1,20 +1,55 @@
-button, .button {
-  background-color: var(--textColor);
-  color: white;
-  
-  display: inline-flex;
-  align-items: center;
-  height: 48px;
-  padding: 1rem 1.5rem;
-  border-radius: 24px;
-  font-size: 1.125rem;
-  line-height: 1rem;
-  font-weight: 600;
-  text-transform: none;
-  white-space: nowrap;
-  text-decoration: none;
+@use '../2-design-tokens/mixins' as *;
+@use '../2-design-tokens/media-queries' as *;
+@use '../2-design-tokens/variables' as *;
 
-  &:hover {
-    background-color: rgba(26, 26, 26, 0.85);
+.button {
+  @include buttonReset;
+  display: inline-flex;
+  width: max-content;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: $border-radius;
+  background-color: $black;
+  color: $white;
+  padding: 16px 32px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: background-color 300ms ease-out;
+  transition: background-color 300ms ease-out;
+  font-size: 20px;
+
+  @include media($m-screen-up) {
+    font-size: 27px;
   }
+}
+
+.button span {
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  will-change: transform;
+}
+
+.button:hover span {
+  -webkit-transform: translate3d(-1rem, 0, 0);
+  transform: translate3d(-1rem, 0, 0);
+}
+
+.button svg {
+  position: absolute;
+  width: 1.1em;
+  right: 0;
+  opacity: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  will-change: right, opacity;
+}
+
+.button:hover svg {
+  opacity: 1;
+  right: -2rem;
 }
