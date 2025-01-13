@@ -5,8 +5,11 @@
 @use '../2-design-tokens/media-queries' as *;
 @use '../2-design-tokens/typography' as *;
 
+
 .post-image__container {
+  position: relative;
   @include horizontalContainer;
+  // min-height: 600px;
   padding-top: calc(#{$gtr} * 3);
   
   @include media($m-screen-up) {
@@ -14,12 +17,59 @@
   }
 }
 
+.post-image__grid {
+  @include grid;
+  position: relative;
+}
+
 .post-image__image {
+  @include col;
   aspect-ratio: 4/2.5;
 
   img {
+    aspect-ratio: 4/2.5;
     height: 100%;
     width: 100%;
     object-fit: cover;
+  }
+}
+
+
+.post-image__outline-second,
+.post-image__outline-third {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.post-image__outline-first {
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: transparent;
+  border: 4px solid black;
+}
+
+.post-image__outline-second {
+  top: 4px;
+  left: 4px;
+  z-index: 2;
+  background-color: magenta;
+
+  @include media($m-screen-up) {
+    top: 13px;
+    left: 13px;
+  }
+}
+
+.post-image__outline-third {
+  top: 12px;
+  left: 12px;
+  z-index: 1;
+  background-color: black;
+  @include media($m-screen-up) {
+    top: 35px;
+    left: 35px;
   }
 }
