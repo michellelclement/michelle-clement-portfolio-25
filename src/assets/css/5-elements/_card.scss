@@ -57,6 +57,7 @@
 }
 
 .card__copy {
+  @include flowV(calc($gtr/2));
   padding: $gtr;
 }
 

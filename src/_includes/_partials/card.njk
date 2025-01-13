@@ -10,18 +10,18 @@
     </div>
   </a>
   <div class="card__copy">
-    <h3>
+    <h4>
       {% if post.data.title %}
         {{ post.data.title }}
       {% else %}
         <code>{{ post.url }}</code>
       {% endif %}
-    </h3>
+    </h4>
 
     {% if post.data.subtitle %}
-      <h4>
+      <p>
         {{ post.data.subtitle }}
-      </h4>
+      </p>
     {% endif %}
   </div>
 </div>
