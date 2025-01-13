@@ -4,7 +4,8 @@
 @use '../2-design-tokens/spacing' as *;
 @use '../2-design-tokens/media-queries' as *;
 
-.postlist__container {
+
+.projects__container {
   @include grid;
   @include rowGap(calc($gtr * 3));
 

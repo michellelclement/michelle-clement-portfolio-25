@@ -8,3 +8,7 @@
   @include verticalPadding;
   @include horizontalContainer;
 }
+
+.work__heading {
+  padding-bottom:calc($gtr * 2);
+}
