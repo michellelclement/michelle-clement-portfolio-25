@@ -11,7 +11,7 @@
 
 .list-text__grid {
   @include grid;
-  @include rowGap(calc(#{$gtr} * 2));
+  @include rowGap($gtr);
 }
 
 .list-text__header {
@@ -29,5 +29,5 @@
 }
 
 .list-text__dates {
-  padding: $gtr 0 calc(#{$gtr} * 2) 0;
+  padding: 0 0 $gtr 0;
 }
