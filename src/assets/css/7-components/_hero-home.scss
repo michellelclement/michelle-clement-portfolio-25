@@ -6,7 +6,7 @@
 @use '../2-design-tokens/typography' as *;
 
 
-.hero {
+.hero-home {
   position: relative;
   min-height: 70vh;
   display: flex;
@@ -18,15 +18,14 @@
   }
 }
 
-.hero__container {
+.hero-home__container {
   @include horizontalContainer;
-  margin: unset;
+  @include verticalPadding;
 }
 
-.hero__grid {
+.hero-home__grid {
   @include grid;
   @include rowGap;
-  container-type: inline-size;
   padding-top: calc(#{$gtr} * 3);
   padding-bottom: calc(#{$gtr} * 3);
 
@@ -44,7 +43,7 @@
   }
 }
 
-.hero__header-1 {
+.hero-home__header-1 {
   grid-column: 1 / span 12;
 
   @include media($m-screen-up) {
@@ -52,7 +51,7 @@
   }
 }
 
-.hero__header-2 {
+.hero-home__header-2 {
   grid-row: 2;
   grid-column: 2 / span 5;
 
@@ -70,7 +69,7 @@
   }
 }
 
-.hero__sub-header {
+.hero-home__sub-header {
   grid-row: 3;
   grid-column: 1 / span 12;
   padding-top: calc(#{$gtr} * 2);
@@ -80,19 +79,12 @@
   }
 }
 
-.hero__cta {
-  grid-row: 3;
-  grid-column: 1 / span 12;
-  padding-bottom: calc(#{$gtr} * 2);
+// .hero__cta {
+//   grid-row: 3;
+//   grid-column: 1 / span 12;
+//   padding-bottom: calc(#{$gtr} * 2);
 
-  @include media($m-screen-up) {
-    grid-column: 9 / span 4;
-  }
-}
-
-.hero__scroll {
-
-  @include media($l-screen-up) {
-    padding-bottom: $gtr;
-  }
-}
+//   @include media($m-screen-up) {
+//     grid-column: 9 / span 4;
+//   }
+// }
