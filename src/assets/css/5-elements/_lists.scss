@@ -1,26 +1,26 @@
 @use '../2-design-tokens/index' as *;
 
-// ul, ol {
-//   font-size: var(--fluid-0);
-//   line-height: 1.5;
-// }
+ul, ol {
+  font-size: var(--fluid-0);
+  line-height: 1.5;
+}
 
-// ul[class],
-// ol[class] {
-//   list-style: none;
-//   padding: 0;
-// }
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+}
 
-// li > {
+li > {
 
-//   ul,
-//   ol {
-//     margin-left: $gtr;
-//     margin-bottom: 0;
-//   }
+  ul,
+  ol {
+    margin-left: $gtr;
+    margin-bottom: 0;
+  }
 
-// }
+}
 
-// section.list {
-//   margin: $gtr 0;
-// }
+section.list {
+  margin: $gtr 0;
+}
