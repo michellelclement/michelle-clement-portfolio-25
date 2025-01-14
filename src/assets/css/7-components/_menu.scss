@@ -1,0 +1,30 @@
+@use '../2-design-tokens/index' as *;
+
+// input[type='checkbox'] {
+//   display: none;
+// }
+
+.menu {
+  width: 100%;
+  height: 100%;
+  background-color: plum;
+  position: fixed;
+  top: 0;
+  left: 0;
+  clip-path: circle(25px at calc(100% - 45px) 45px);
+  transition: all 500ms ease-in-out;
+}
+
+input[type='checkbox']:checked ~ .menu {
+  clip-path: circle(100%);
+}
+
+.menu__menu {
+  display: flex;
+  flex-direction: column;
+  gap: $gtr;
+}
+
+.menu__link {
+  font-size: 21px;
+}

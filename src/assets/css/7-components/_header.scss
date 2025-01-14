@@ -1,6 +1,10 @@
 @use '../2-design-tokens/index' as *;
 @use '../6-skeleton/grid' as *;
 
+.header {
+  position: relative;
+}
+
 .header__container {
   @include horizontalContainer;
   display: flex;
@@ -8,7 +12,16 @@
   align-items: center;
 }
 
-
 .header__left {
   font-size: 32px;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  border: 2px solid purple;
+  background-color: purple;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
