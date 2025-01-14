@@ -1,5 +1,5 @@
-<div class="card">
-  <a href="{{ post.url | url }}" class="postlist-link card__image">
+<a href="{{ post.url | url }}" class="card">
+  <div class="postlist-link card__image">
     <div class="card__image--container">
       <img src="/assets/images/{{ post.data.projectPreviewImg }}" alt="">
       <div class="button card__button">
@@ -8,7 +8,7 @@
         </span>
       </div>
     </div>
-  </a>
+  </div>
   <div class="card__copy">
     <h4>
       {% if post.data.title %}
@@ -24,4 +24,4 @@
       </p>
     {% endif %}
   </div>
-</div>
+</a>
