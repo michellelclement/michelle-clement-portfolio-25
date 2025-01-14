@@ -8,7 +8,10 @@
 
 .hero-post {
   position: relative;
-  min-height: 70vh;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @include media($m-screen-up) {
     height: 80vh;
@@ -17,25 +20,42 @@
 
 .hero-post__container {
   @include horizontalContainer;
+  width: 100%;
   padding-top: calc(#{$gtr} * 3);
   padding-bottom: calc(#{$gtr} * 3);
 }
 
 .hero-post__grid {
-  @include grid;
-  @include rowGap;
+  display: flex;
+  flex-direction: column;
+  gap: $gtr;
+  padding-bottom: calc(#{$gtr} * 3);
+
+  @include media($m-screen-up) {
+    @include grid;
+    @include rowGap;
+  }
 }
 
 .hero-post__header-1 {
-  grid-column: 1 / span 12;
+  @include media($m-screen-down) {
+    font-size: 80px;
+  }
+
+  @include media($xs-screen-down) {
+    font-size: 55px;
+  }
+
+  @include media($m-screen-up) {
+    grid-column: 1 / span 12;
+  }
 }
 
 .hero-post__sub-header {
-  grid-row: 2;
-  grid-column: 1 / span 12;
-  padding-top: calc(#{$gtr} * 2);
+  padding-top: calc(#{$gtr} * 3);
 
   @include media($m-screen-up) {
+    grid-row: 2;
     grid-column: 7 / span 5;
   }
 }
@@ -46,5 +66,14 @@
 
   @include media($m-screen-up) {
     grid-column: 7 / span 5;
+  }
+}
+
+.hero-post__scroll {
+  width: 100%;
+  padding-top: calc($gtr*3);
+
+  @include media($xl-screen-up) {
+    padding-top: $gtr;
   }
 }
