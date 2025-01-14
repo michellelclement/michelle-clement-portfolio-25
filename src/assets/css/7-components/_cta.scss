@@ -3,22 +3,20 @@
 @use '../2-design-tokens/functions' as *;
 @use '../2-design-tokens/spacing' as *;
 @use '../2-design-tokens/media-queries' as *;
+@use '../2-design-tokens/colors' as *;
 
 .cta {
   @include verticalPadding;
-  border: 1px solid red;
-  // background-color: $dark;
-  // color: $light;
-  // padding: calc(#{$gtr} * 4) $gtr;
-  // cursor: pointer;
-
-  // @include media($m-screen-up) {
-  //   padding: calc(#{$gtr} * 6) 0;
-  // }
+  border-top: 2px solid $black;
+  border-bottom: 2px solid $black;
+  background-color: $black;
+  color: $white;
+  cursor: pointer;
+  transition: background-color 200ms ease-out, color 0.2s ease;
 
   &:hover {
     background-color: transparent;
-    // color: $dark;
+    color: $black;
   }
 }
 
@@ -28,6 +26,5 @@
 
   @include media($m-screen-up) {
     font-size: rem(110);
-    
   }
 }
