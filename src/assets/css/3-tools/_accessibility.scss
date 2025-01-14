@@ -9,7 +9,7 @@
 .skiplink:focus {
   border-radius: 4px;
   clip: auto;
-  color: var(--textColor);
+  // color: var(--textColor);
   height: auto;
   padding: 0.5em 1em;
   margin: 0.5em;
@@ -26,5 +26,5 @@
 
 .focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px var(--focusColor);
+  // box-shadow: 0 0 0 3px var(--focusColor);
 }

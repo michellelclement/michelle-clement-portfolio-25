@@ -1,6 +1,7 @@
 @use '../2-design-tokens/mixins' as *;
 @use '../2-design-tokens/media-queries' as *;
 @use '../2-design-tokens/variables' as *;
+@use '../2-design-tokens/colors' as *;
 
 .button {
   @include buttonReset;

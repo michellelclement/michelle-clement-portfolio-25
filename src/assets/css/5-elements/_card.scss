@@ -4,6 +4,7 @@
 @use '../2-design-tokens/spacing' as *;
 @use '../2-design-tokens/media-queries' as *;
 @use '../2-design-tokens/typography' as *;
+@use '../2-design-tokens/colors' as *;
 
 .card {
   border: 3px solid black;
@@ -39,7 +40,7 @@
 .card__image {
   display: block;
   position: relative;
-  background-color: black;
+  background-color: $black;
   object-fit: cover;
   width: 100%;
 }

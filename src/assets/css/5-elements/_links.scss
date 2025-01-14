@@ -1,5 +1,7 @@
+@use '../2-design-tokens/colors' as *;
+
 a {
-	color: var(--primaryColor);
+	color: $black;
 	text-decoration: underline;
 
 	&:hover {

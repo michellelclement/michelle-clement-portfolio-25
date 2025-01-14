@@ -1,9 +1,10 @@
 @use '../2-design-tokens/functions' as *;
 @use '../2-design-tokens/spacing' as *;
+@use '../2-design-tokens/colors' as *;
 
 .divider {
   position: relative;
   width: 100%;
   height: rem(4);
-  background-color: red;
+  background-color: $black;
 }

@@ -1,7 +1,9 @@
+@use '../2-design-tokens/colors' as *;
+
 /* Forms */
 input[type="checkbox"],
 input[type="radio"],
 input[type="range"],
 progress {
-  accent-color: var(--primaryColor);
+  accent-color: $black;
 }

@@ -1,6 +1,8 @@
+@use '../2-design-tokens/colors' as *;
+
 body {
-  color: var(--textColor);
-  background-color: var(--backgroundColor);
-  padding-right: var(--scrollbarComp);
+  color: $black;
+  background-color: $white;
+  // padding-right: var(--scrollbarComp);
   overflow-x: hidden;
 }

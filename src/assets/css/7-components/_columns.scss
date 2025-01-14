@@ -4,6 +4,7 @@
 @use '../2-design-tokens/spacing' as *;
 @use '../2-design-tokens/media-queries' as *;
 @use '../2-design-tokens/typography' as *;
+@use '../2-design-tokens/colors' as *;
 
 .columns__container {
   @include horizontalContainer;
@@ -33,7 +34,7 @@
       bottom: -30px; // Center the line in the row gap
       right: 0;
       height: 1px;
-      background-color: red; // Line color
+      background-color: $black; // Line color
     }
   }
 
@@ -46,7 +47,7 @@
       right: -40px; // Center the line in the column gap
       bottom: 0;
       width: 1px; // Line thickness
-      background-color: red; // Line color
+      background-color: $black; // Line color
     }
   }
   
