@@ -24,33 +24,31 @@
   @include col(3);
   position: relative;
   text-align: center;
-  @include flowV;
+  @include flowV(calc($gtr/2));
 
   @include media($m-screen-down) {
     &:not(:last-child)::after {
       content: '';
       position: absolute;
       left: 0;
-      bottom: -30px; // Center the line in the row gap
+      bottom: -30px; 
       right: 0;
       height: 1px;
-      background-color: $black; // Line color
+      background-color: $black; 
     }
   }
 
   @include media($m-screen-up) {
+    @include flowV;
     @include col(1);
     &:not(:last-child)::after {
       content: '';
       position: absolute;
       top: 0;
-      right: -40px; // Center the line in the column gap
+      right: -40px; 
       bottom: 0;
-      width: 1px; // Line thickness
-      background-color: $black; // Line color
+      width: 1px; 
+      background-color: $black; 
     }
   }
-  
-    // Add vertical line to the right of each column except the last one
-    
 }
