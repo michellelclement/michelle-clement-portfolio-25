@@ -16,12 +16,41 @@
   font-size: 32px;
 }
 
+.header__menu {
+  display: none; /* Hide the checkbox */
+}
+
 .header__right {
+  position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   border: 2px solid purple;
   background-color: purple;
   height: 50px;
   width: 50px;
   border-radius: 50%;
+  z-index: 2;
+}
+
+.header__menu-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* Matches the circle shape */
+  cursor: pointer; /* Indicates it's clickable */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Text color inside the circle */
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Optional: Checkbox checked state styling */
+.header__menu:checked + .header__menu-label {
+  background-color: darkpurple; /* Change color when checked */
 }
