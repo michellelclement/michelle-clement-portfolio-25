@@ -7,11 +7,10 @@
 
 .projects__container {
   @include grid;
-  @include rowGap(calc($gtr * 3));
+  @include rowGap(calc($gtr * 2));
 
   @include media($m-screen-up) {
     @include colGap(calc($gtr * 3));
-    @include rowGap(calc($gtr * 2));
     grid-column: 2 / span 5;
   }
 }
