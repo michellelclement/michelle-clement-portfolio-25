@@ -1,6 +1,4 @@
-@use '../2-design-tokens/mixins' as *;
-@use '../2-design-tokens/functions' as *;
-@use '../2-design-tokens/media-queries' as *;
+@use '../2-design-tokens/index' as *;
 // Main Site Layout
 
 body {

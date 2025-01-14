@@ -1,4 +1,4 @@
-@use '../2-design-tokens/spacing' as *;
+@use '../2-design-tokens/index' as *;
 
 @mixin grid($number: 12) {
   display: grid;

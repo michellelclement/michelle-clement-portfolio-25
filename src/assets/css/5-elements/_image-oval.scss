@@ -1,14 +1,9 @@
-@use '../2-design-tokens/mixins' as *;
-@use '../2-design-tokens/media-queries' as *;
-@use '../2-design-tokens/variables' as *;
-@use '../2-design-tokens/colors' as *;
+@use '../2-design-tokens/index' as *;
 
 .image-oval {
   min-height: 300px;
   aspect-ratio: 3/4;
   position: relative;
-  // width: 100%;
-  // height: 100%;
 
   @include media($m-screen-up) {
     min-height: 400px;
