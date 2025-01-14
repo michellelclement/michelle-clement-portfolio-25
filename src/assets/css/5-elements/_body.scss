@@ -6,3 +6,7 @@ body {
   // padding-right: var(--scrollbarComp);
   overflow-x: hidden;
 }
+
+* {
+  box-sizing: border-box;
+}

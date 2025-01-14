@@ -4,12 +4,11 @@
 @use '../2-design-tokens/colors' as *;
 
 .image-oval {
-  min-height: 350px;
+  min-height: 300px;
   aspect-ratio: 3/4;
   position: relative;
-  width: 100%;
-  height: 100%;
-  // overflow: hidden;
+  // width: 100%;
+  // height: 100%;
 
   @include media($m-screen-up) {
     min-height: 400px;

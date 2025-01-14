@@ -15,13 +15,18 @@
 }
 
 .hero-about__grid {
-  @include grid;
-  @include rowGap(calc($gtr*2));
-  @include colGap($gtr);
+  display: flex;
+  flex-direction: column;
+  gap: $gtr;
+
+  @include media($m-screen-up) {
+    @include grid;
+    @include rowGap(calc($gtr*2));
+    @include colGap($gtr);
+  }
 }
 
 .hero-about__header {
-  grid-column: 1 / span 12;
 
   @include media($m-screen-up) {
     grid-column: 1 / span 4;
@@ -29,11 +34,13 @@
 }
 
 .hero-about__image {
-  grid-row: 2;
-
   @include media($m-screen-up) {
     grid-column: 5 / span 4;
     grid-row: 1;
+  }
+
+  .image-oval {
+    max-height: 450px;
   }
 }
 
@@ -63,5 +70,5 @@
 }
 
 .hero-about__scroll {
-  padding-bottom: $gtr;
+  padding-top: $gtr;
 }
