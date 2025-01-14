@@ -14,18 +14,18 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: $gtr 0;
   gap: $gtr;
   
   @include media($m-screen-up) {
     flex-direction: row;
+    
   }
 }
 
 .footer__right-items {
   display: flex;
   flex-direction: row;
-}
-
-.footer__right-span {
-  padding: 0 calc(#{$gtr} / 3);
+  gap: $gtr;
+  margin: 0;
 }
