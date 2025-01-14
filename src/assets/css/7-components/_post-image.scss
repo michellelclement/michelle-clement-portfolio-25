@@ -9,7 +9,6 @@
 .post-image__container {
   position: relative;
   @include horizontalContainer;
-  // min-height: 600px;
   padding-top: calc(#{$gtr} * 3);
   
   @include media($m-screen-up) {
@@ -68,6 +67,7 @@
   left: 12px;
   z-index: 1;
   background-color: black;
+
   @include media($m-screen-up) {
     top: 35px;
     left: 35px;

@@ -17,6 +17,7 @@
 .post-image-grid__grid {
   @include grid;
   @include colGap($gtr);
+  @include rowGap($gtr);
 }
 
 .post-image-grid__image {
