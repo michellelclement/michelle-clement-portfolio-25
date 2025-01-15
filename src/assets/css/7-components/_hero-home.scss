@@ -38,10 +38,14 @@
 .hero-home__header-2 {
 
   @include media($m-screen-down) {
-    font-size: 80px;
+    font-size: 100px;
   }
 
-  @include media($xs-screen-down) {
+  @include media($s-screen-down) {
+    font-size: 75px;
+  }
+
+  @include media($xxs-screen-down) {
     font-size: 55px;
   }
 }
@@ -55,7 +59,7 @@
 }
 
 .hero-home__header-2 {
- padding-left: $gtr;
+ padding-left: calc($gtr*2);
 
   @include media($m-screen-up) {
     grid-row: 2;
