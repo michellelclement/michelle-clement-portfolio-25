@@ -13,7 +13,7 @@
   overflow: hidden;
   position: relative;
   -webkit-transition: background-color 300ms ease-out;
-  transition: background-color 300ms ease-out;
+  transition: background-color 200ms ease-out;
   font-size: 20px;
 
   @include media($xl-screen-up) {
