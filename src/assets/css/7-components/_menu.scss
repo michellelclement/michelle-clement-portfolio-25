@@ -15,6 +15,10 @@
   @include media($m-screen-up) {
     clip-path: circle(40px at calc(100% - 100px) 55px);
   }
+
+  @include media($xl-screen-up) {
+    clip-path: circle(40px at calc(100% - 150px) 55px);
+  }
 }
 
 input[type='checkbox']:checked ~ .menu {
