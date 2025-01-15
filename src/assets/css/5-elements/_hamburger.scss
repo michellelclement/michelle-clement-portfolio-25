@@ -1,0 +1,38 @@
+.hamburger {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hamburgerRotate.active {
+  transform: rotate(45deg);
+}
+
+.hamburgerRotate180.active {
+  transform: rotate(180deg);
+}
+
+.hamburger__line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:#000;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+
+.hamburger1 .top {
+  stroke-dasharray: 40 139;
+}
+.hamburger1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.hamburger1.active .top {
+  stroke-dashoffset: -98px;
+}
+.hamburger1.active .bottom {
+  stroke-dashoffset: -138px;
+}
