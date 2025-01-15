@@ -6,7 +6,7 @@
   height: rem(4);
   background-color: $black;
 
-  &--hero-home {
-    margin-top: -20px;
+  &--hero {
+    margin-top: calc($gtr*1.5);
   }
 }
