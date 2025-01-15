@@ -9,6 +9,15 @@
 
   &:hover {
     border-radius: 8%;
+
+    .card__button svg {
+      opacity: 1;
+      right: -2rem;
+    }
+
+    .card__button span {
+      transform: translate3d(-1rem, 0, 0);
+    }
   }
 }
 
