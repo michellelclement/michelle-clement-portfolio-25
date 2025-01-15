@@ -6,11 +6,15 @@
   background-color: plum;
   position: fixed;
   top: 0;
-  left: 0;
-  clip-path: circle(25px at calc(100% - 25px) 25px);
+  right: 0;
+  clip-path: circle(30px at calc(100% - 50px) 30px);
   transition: all 500ms ease-in-out;
   z-index: 5; 
   pointer-events: none; 
+
+  @include media($m-screen-up) {
+    clip-path: circle(40px at calc(100% - 100px) 40px);
+  }
 }
 
 input[type='checkbox']:checked ~ .menu {

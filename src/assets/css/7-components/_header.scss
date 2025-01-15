@@ -1,16 +1,15 @@
+@use '../2-design-tokens/index' as *;
+
 .header {
   position: relative; 
   z-index: 10; 
 }
 
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .header__left {
+  @include horizontalContainer;
+  display: block;
   font-size: 32px;
+  width: 100%;
 }
 
 .header__menu {
@@ -18,20 +17,30 @@
 }
 
 .header__right {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid purple;
-  background-color: purple;
-  height: 50px;
-  width: 50px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // border: 2px solid purple;
+  // background-color: purple;
+  height: 65px;
+  width: 65px;
   border-radius: 50%;
   z-index: 15; 
+
+  @include media($m-screen-up) {
+    top: 0;
+    right: 60px;
+    height: 80px;
+    width: 80px;
+  }
 }
 
 .header__menu-label {
-  position: absolute;
+  position: absolute; /* Anchor on top of .header__right */
+  // background-color: red;
   top: 0;
   left: 0;
   width: 100%;
@@ -41,9 +50,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center;
-  z-index: 20;
+  z-index: 20; /* Ensure it is above everything */
 }
