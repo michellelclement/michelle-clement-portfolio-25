@@ -1,12 +1,9 @@
-@use '../2-design-tokens/index' as *;
-@use '../6-skeleton/grid' as *;
-
 .header {
-  position: relative;
+  position: relative; 
+  z-index: 10; 
 }
 
 .header__container {
-  @include horizontalContainer;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +14,7 @@
 }
 
 .header__menu {
-  display: none; /* Hide the checkbox */
+  display: none; 
 }
 
 .header__right {
@@ -30,7 +27,7 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  z-index: 2;
+  z-index: 15; 
 }
 
 .header__menu-label {
@@ -39,18 +36,14 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 50%; /* Matches the circle shape */
-  cursor: pointer; /* Indicates it's clickable */
+  border-radius: 50%;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white; /* Text color inside the circle */
+  color: white;
   font-size: 12px;
   font-weight: bold;
   text-align: center;
-}
-
-/* Optional: Checkbox checked state styling */
-.header__menu:checked + .header__menu-label {
-  background-color: darkpurple; /* Change color when checked */
+  z-index: 20;
 }

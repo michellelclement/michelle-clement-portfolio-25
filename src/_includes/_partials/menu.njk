@@ -1,5 +1,4 @@
 <nav class="menu" role="navigation" tabindex="-1">
-  {# Nav Links  #}
   <ul class="menu__menu">
     {%- for item in collections.all | eleventyNavigation -%}
       {%- if item.url -%}
@@ -11,6 +10,6 @@
           </a>
         </li>
       {%- endif -%}
-    {%- endfor -%}  
+    {%- endfor -%}
   </ul>
 </nav>
