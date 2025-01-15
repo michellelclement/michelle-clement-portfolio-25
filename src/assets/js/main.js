@@ -30,3 +30,7 @@ window.addEventListener('scroll', function() {
     header.classList.remove('hidden');
   }
 });
+
+// No JS
+const rootEL = document.documentElement;
+rootEL.classList.remove('no-js');
