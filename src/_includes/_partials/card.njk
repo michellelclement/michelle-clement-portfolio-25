@@ -10,13 +10,13 @@
     </div>
   </div>
   <div class="card__copy">
-    <h4>
+    <h3>
       {% if post.data.title %}
         {{ post.data.title }}
       {% else %}
         <code>{{ post.url }}</code>
       {% endif %}
-    </h4>
+    </h3>
 
     {% if post.data.subtitle %}
       <p>
