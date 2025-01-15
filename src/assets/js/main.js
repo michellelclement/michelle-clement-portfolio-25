@@ -16,3 +16,17 @@ document.addEventListener('DOMContentLoaded', () => {
   // Attach the toggleBodyScroll function to the checkbox's change event
   checkbox.addEventListener('change', toggleBodyScroll);
 });
+
+// JavaScript to handle scroll event and apply fade effect
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('.header');
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition > 50) {  // You can adjust the scroll threshold as needed
+    header.classList.add('hidden');
+    header.classList.remove('visible');
+  } else {
+    header.classList.add('visible');
+    header.classList.remove('hidden');
+  }
+});

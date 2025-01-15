@@ -3,6 +3,17 @@
 .header {
   position: relative; 
   z-index: 10; 
+  transition: opacity 0.3s ease-out; /* Smooth fade transition */
+}
+
+/* Initially, make the header fully visible */
+.header.visible {
+  opacity: 1;
+}
+
+/* When the class 'fade' is added, the header will fade out */
+.header.hidden {
+  opacity: 0;
 }
 
 .header__left {
