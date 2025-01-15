@@ -23,18 +23,13 @@
 
 .header__right {
   position: absolute;
-  top: 5px;
-  right: 20px;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+  top: 15px;
+  right: 10px;
+  height: 80px;
+  width: 80px;
   border: 2px solid purple;
-  // background-color: purple;
-  height: 60px;
-  width: 60px;
   border-radius: 50%;
   z-index: 15; 
-
 
   @include media($m-screen-up) {
     top: 15px;
