@@ -28,7 +28,11 @@ input[type='checkbox']:checked ~ .menu {
   align-items: center;
   justify-content: center;
   height: 100%;
-  gap: calc($gtr*5);
+  gap: calc($gtr*2);
+
+  @include media($m-screen-up) {
+    gap: calc($gtr*5);
+  }
 }
 
 .menu__item {
@@ -39,4 +43,6 @@ input[type='checkbox']:checked ~ .menu {
 .menu__link {
   font-size: 50px;
   cursor: pointer;
+
+
 }
