@@ -7,9 +7,14 @@
 
 .header__left {
   @include horizontalContainer;
+  padding-top: 20px;
   display: block;
   font-size: 32px;
   width: 100%;
+
+  @include media($m-screen-up) {
+    padding-top: 40px;
+  }
 }
 
 .header__menu {
