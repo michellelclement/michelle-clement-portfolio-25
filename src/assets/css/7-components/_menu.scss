@@ -25,9 +25,18 @@ input[type='checkbox']:checked ~ .menu {
 .menu__menu {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: calc($gtr*5);
 }
 
+.menu__item {
+  &--active {
+    font-weight: 900;
+  }
+}
 .menu__link {
-  font-size: 21px;
+  font-size: 50px;
+  cursor: pointer;
 }
