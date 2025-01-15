@@ -5,4 +5,8 @@
   width: 100%;
   height: rem(4);
   background-color: $black;
+
+  &--header {
+    margin-top: 10px;
+  }
 }
