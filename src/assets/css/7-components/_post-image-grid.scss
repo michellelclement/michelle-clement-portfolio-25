@@ -16,9 +16,10 @@
   @include rowGap($gtr);
 }
 
-.post-image-grid__image {
-  aspect-ratio: 4/2.5;  
+.post-image-grid__image {  
   @include col;
+  aspect-ratio: 4/2.5;
+  border: 4px solid $black;
 
   @include media($m-screen-up) {
     @include col(6);

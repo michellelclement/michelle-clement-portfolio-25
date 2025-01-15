@@ -1,6 +1,10 @@
 @use '../2-design-tokens/index' as *;
 @use '../6-skeleton/grid' as *;
 
+// .work {
+//   background-color: $white;
+// }
+
 .work__container {
   @include verticalPadding;
   @include horizontalContainer;

@@ -25,11 +25,13 @@
     &:not(:last-child)::after {
       content: '';
       position: absolute;
-      left: 0;
-      bottom: -30px; 
-      right: 0;
-      height: 1px;
-      background-color: $black; 
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -30px;
+      height: 5px;
+      width: 75%;
+      background-color: $tertiary;
+      outline: 4px solid $black;
     }
   }
 
@@ -42,8 +44,9 @@
       top: 0;
       right: -40px; 
       bottom: 0;
-      width: 1px; 
-      background-color: $black; 
+      width: 10px; 
+      background-color: $tertiary; 
+      outline: 4px solid $black;
     }
   }
 }

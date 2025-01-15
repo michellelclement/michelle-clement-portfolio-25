@@ -2,7 +2,7 @@
 @use '../2-design-tokens/index' as *;
 
 .card {
-  border: 3px solid black;
+  border: 3px solid $black;
   border-radius: 5%;
   transition: all 500ms;
   overflow: hidden;
@@ -57,6 +57,8 @@
 }
 
 .card__copy {
+  background-color: $primiaryColor;
+  height: 100%;
   @include flowV(calc($gtr/4));
   padding: calc($gtr/2);
 

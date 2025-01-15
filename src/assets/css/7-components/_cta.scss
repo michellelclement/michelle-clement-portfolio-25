@@ -10,10 +10,16 @@
   color: $white;
   cursor: pointer;
   transition: background-color 200ms ease-out, color 0.2s ease;
+  
+  p {
+    color: $backgroundColor;
+  }
 
   &:hover {
     background-color: transparent;
-    color: $black;
+    p {
+      color: $heading;
+    }
   }
 }
 
