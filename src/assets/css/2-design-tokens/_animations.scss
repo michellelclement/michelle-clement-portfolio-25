@@ -1,0 +1,9 @@
+.js-animate-in,
+.js-animate-in-children > * {
+  opacity: 0;
+  transform: translateY(45px);
+
+  .no-js & {
+    opacity: 1;
+  }
+}
