@@ -19,7 +19,7 @@
 .post-image-grid__image {  
   @include col;
   aspect-ratio: 4/2.5;
-  border: 4px solid $black;
+  border: $border;
 
   @include media($m-screen-up) {
     @include col(6);

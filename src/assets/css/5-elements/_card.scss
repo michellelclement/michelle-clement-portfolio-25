@@ -2,7 +2,7 @@
 @use '../2-design-tokens/index' as *;
 
 .card {
-  border: 3px solid $black;
+  border: $border;
   border-radius: 5%;
   transition: all 500ms;
   overflow: hidden;
