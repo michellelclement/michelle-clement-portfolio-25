@@ -1,3 +1,5 @@
+@use '../2-design-tokens/index' as *;
+
 h1 {
   font-size: var(--fluid-5);
 }

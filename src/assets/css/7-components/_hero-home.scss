@@ -14,11 +14,35 @@
   }
 }
 
+.hero-home h1 {
+  font-weight: 600;
+  
+  @include media($s-screen-up) {
+    font-size: 100px;
+  }
+
+  @include media($m-screen-up) {
+    font-size: 100px;
+  }
+
+  @include media($l-screen-up) {
+    font-size: 130px;
+  }
+
+  @include media($xl-screen-up) {
+    font-size: 170px;
+  }
+}
+
 .hero-home__container {
   @include horizontalContainer;
   width: 100%;
   padding-top: calc(#{$gtr} * 3);
   padding-bottom: calc(#{$gtr} * 3);
+
+  @include media($xl-screen-up) {
+    padding-top: $gtr;
+  }
 }
 
 .hero-home__grid {
