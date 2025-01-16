@@ -66,15 +66,15 @@ function heroAnimation() {
   });
 
   // After the animations complete, target a specific character (e.g., the 3rd character)
-  const targetCharIndex = 9; // Change this to target a different character (e.g., 2nd character = index 1)
+  const targetCharIndex = 1; // Change this to target a different character (e.g., 2nd character = index 1)
 
   // Add a spinning animation every 2 seconds for the selected character
   tl.to(splitText.chars[targetCharIndex], {
     duration: 2,            // Duration of each spin
-  rotationX: 360,         // Perform a full rotation along the X-axis
-  ease: "back.out(1.7)",  // Easing for smooth rotation
-  repeat: -1,             // Repeat the animation indefinitely
-  repeatDelay: 2,         // Add a 2-second delay between each repeat
+    rotationX: 360,         // Perform a full rotation along the X-axis
+    ease: "back.out(1.7)",  // Easing for smooth rotation
+    repeat: -1,             // Repeat the animation indefinitely
+    repeatDelay: 2,         // Add a 2-second delay between each repeat
   });
 }
 
