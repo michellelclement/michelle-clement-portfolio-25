@@ -3,6 +3,7 @@
 
 .articles__container {
   @include horizontalContainer;
+  @include verticalPadding;
 }
 
 .articles__grid {
