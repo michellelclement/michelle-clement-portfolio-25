@@ -1,0 +1,25 @@
+@use '../2-design-tokens/index' as *;
+@use '../6-skeleton/grid' as *;
+
+.articles__container {
+  @include horizontalContainer;
+}
+
+.articles__grid {
+  @include grid;
+  @include colGap(calc($gtr*2));
+  @include rowGap(calc($gtr*2));
+}
+
+.article__item {
+  @include col(6);
+  border: $border;
+  border-radius: 5%;
+  transition: all 500ms;
+  overflow: hidden;
+}
+
+.article__item:hover,
+.article__item:active {
+  border-radius: 8%;
+}
