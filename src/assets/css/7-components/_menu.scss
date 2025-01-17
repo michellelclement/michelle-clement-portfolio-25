@@ -13,11 +13,15 @@
   pointer-events: none; 
 
   @include media($m-screen-up) {
-    clip-path: circle(40px at calc(100% - 100px) 55px);
+    clip-path: circle(40px at calc(100% - 100px) 55px); 
   }
 
   @include media($xl-screen-up) {
-    clip-path: circle(40px at calc(100% - 150px) 55px);
+    clip-path: circle(38px at calc(100% - 115px) 55px);
+  }
+
+  @include media($xxl-screen-up) {
+    clip-path: circle(38px at calc(100% - 170px) 55px);
   }
 }
 
