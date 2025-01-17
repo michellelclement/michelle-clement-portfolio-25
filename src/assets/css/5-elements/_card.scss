@@ -2,6 +2,7 @@
 @use '../2-design-tokens/index' as *;
 
 .card {
+  position: relative;
   border: $border;
   border-radius: 5%;
   transition: all 500ms;
@@ -11,6 +12,12 @@
 .card:hover,
 .card:active {
   border-radius: 8%;
+
+  @include media($m-screen-up) {
+    .overlay {
+      opacity: 1;
+    }
+  }
 
   .card__button svg {
     opacity: 1;
@@ -42,6 +49,24 @@
   background-color: $black;
   object-fit: cover;
   width: 100%;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+
+    @include media($m-screen-up) {
+      opacity: 0;
+    }
+  }
 }
 
 .card__image--container img {
@@ -50,11 +75,26 @@
 }
 
 .card__button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+
+  @include media($m-screen-up) {
+    opacity: 0;
+  }
 }
+
+@include media($m-screen-up) {
+  .card:hover .overlay {
+    opacity: 1; // Show overlay on hover
+  }
+  
+  .card:hover .card__button {
+    opacity: 1; // Show button on hover
+  }
+}
+
+
 
 .card__copy {
   background-color: $primiaryColor;
