@@ -7,17 +7,21 @@
   position: fixed;
   top: 0;
   right: 0;
-  clip-path: circle(40px at calc(100% - 50px) 55px);
+  clip-path: circle(27px at calc(100% - 45px) 50px);
   transition: all 500ms ease-in-out;
   z-index: 5; 
   pointer-events: none; 
 
   @include media($m-screen-up) {
-    clip-path: circle(40px at calc(100% - 100px) 55px);
+    clip-path: circle(40px at calc(100% - 100px) 55px); 
   }
 
   @include media($xl-screen-up) {
-    clip-path: circle(40px at calc(100% - 150px) 55px);
+    clip-path: circle(38px at calc(100% - 115px) 55px);
+  }
+
+  @include media($xxl-screen-up) {
+    clip-path: circle(38px at calc(100% - 170px) 55px);
   }
 }
 
