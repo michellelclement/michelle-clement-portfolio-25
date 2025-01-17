@@ -1,10 +1,13 @@
 import { gsap } from "gsap-trial";
 
 import { SplitText } from "gsap-trial/SplitText";
+import { MorphSVGPlugin } from "gsap-trial/MorphSVGPlugin";
 
-gsap.registerPlugin(SplitText);
+gsap.registerPlugin(SplitText, MorphSVGPlugin);
 
 function heroAnimation() {
+
+  //Hero text animation
   const splitText = new SplitText(".js-hero-heading", { type: "chars" });
 
   // Create a timeline to control the sequence of animations
@@ -75,6 +78,14 @@ function heroAnimation() {
     ease: "back.out(1.7)",  // Easing for smooth rotation
     repeat: -1,             // Repeat the animation indefinitely
     repeatDelay: 2,         // Add a 2-second delay between each repeat
+  });
+
+  //Hero SVG animation
+  gsap.to("#flower4-path", {
+    duration: 2,
+    morphSVG: "#flower8-path", // Target shape
+    ease: "power1.inOut",      // Smooth easing
+    transformOrigin: "50% 50%" // Set morph origin to the center
   });
 }
 
