@@ -7,18 +7,30 @@
 }
 
 .articles__grid {
-  @include grid;
-  @include colGap(calc($gtr * 2));
-  @include rowGap(calc($gtr * 2));
+  display: flex;
+  flex-direction: column;
+  gap: $gtr;
+
+  @include media($s-screen-up) {
+    @include grid;
+    @include colGap(calc($gtr * 2));
+    @include rowGap(calc($gtr * 2));
+  }
+    
 }
 
 .article__item {
   position: relative;
-  @include col(6);
+  @include col(12);
   border: $border;
   border-radius: 5%;
   transition: all 500ms;
   overflow: hidden;
+
+
+  @include media($s-screen-up) {
+    @include col(6);
+  }
 
   &:hover,
   &:active {
