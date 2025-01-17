@@ -3,7 +3,7 @@
 .header {
   position: relative; 
   z-index: 10; 
-  transition: opacity 0.3s ease-out; /* Smooth fade transition */
+  transition: opacity 0.3s ease-out;
   @include horizontalContainer;
   padding-top: 35px;
   display: block;
@@ -43,12 +43,7 @@
     right: 60px;
     height: 80px;
     width: 80px;
-    // border: 3px solid red;
   }
-
-  // @include media($l-screen-up) {
-  //   border: 5px solid blue;
-  // }
 
   @include media($xl-screen-up) {
     top: 15px;
