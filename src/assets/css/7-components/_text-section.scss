@@ -31,3 +31,7 @@
     grid-column: 6 / span 7;
   }
 }
+
+.text-section__button {
+  margin-top: calc($gtr*2);
+}
