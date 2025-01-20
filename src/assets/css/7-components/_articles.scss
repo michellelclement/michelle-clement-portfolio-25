@@ -6,6 +6,10 @@
   @include verticalPadding;
 }
 
+.article__heading {
+  grid-column: 1 / span 11;
+}
+
 .articles__grid {
   display: flex;
   flex-direction: column;
@@ -16,7 +20,6 @@
     @include colGap(calc($gtr * 2));
     @include rowGap(calc($gtr * 2));
   }
-    
 }
 
 .article__item {
