@@ -7,8 +7,8 @@ function textAnimation() {
   const items = Array.from(document.querySelectorAll('.js-animate-in'));
   if (items.length) {
     ScrollTrigger.batch(items, {
-      start: 'top 70%',
-      end: 'bottom 20%',
+      start: 'top 80%',
+      end: 'bottom 10%',
       onEnter: (els) => gsap.to(els, {
         y: 0,
         opacity: 1,
