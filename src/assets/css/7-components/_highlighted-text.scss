@@ -13,13 +13,9 @@
 
 .highlighted-text__grid {
   @include grid;
-  @include rowGap($gtr);
+  @include rowGap(calc($gtr*2));
 }
 
-.highlighted-text__heading {
-  grid-column: 1 / span 11;
-}
-
-.highlighted-text__copy {
+.highlighted-text__item {
   grid-column: 1 / span 11;
 }
