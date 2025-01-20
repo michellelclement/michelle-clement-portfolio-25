@@ -5,25 +5,29 @@
       <div class="highlighted-text__item">
         <p class="highlighted-text__heading js-animate-in">{{ highlightedHeader }}</p>
         <p class="highlighted-text__copy p-xlarge js-animate-in">{{ highlightedCopy }}</p>
-        <div class="button highlighted-text__button js-animate-in">
-          <span>Learn more about me
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32">
-              <path stroke="#33272a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.333 22.667 22.667 9.333M9.333 9.333h13.334v13.334"/>
-            </svg>
-          </span>
+        
+        {% if buttonCopy %}
+          <a href="{{ buttonUrl }}" class="button highlighted-text__button js-animate-in">
+            <span>{{ buttonCopy }}
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32">
+                <path stroke="#33272a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.333 22.667 22.667 9.333M9.333 9.333h13.334v13.334"/>
+              </svg>
+            </span>
+          </a>
+        {% endif %}
+      </div>
+      
+      {% if highlightedHeader2 %}
+        <div class="highlighted-text__item">
+          <p class="highlighted-text__heading js-animate-in">{{ highlightedHeader2 }}</p>
+          <p class="highlighted-text__copy p-xlarge js-animate-in">{{ highlightedCopy2 }}</p>
         </div>
-      </div>
-      
-      <div class="highlighted-text__item">
-        <p class="highlighted-text__heading js-animate-in">{{ highlightedHeader2 }}</p>
-        <p class="highlighted-text__copy p-xlarge js-animate-in">{{ highlightedCopy2 }}</p>
-      </div>
 
-      <div class="highlighted-text__item">
-        <p class="highlighted-text__heading js-animate-in">{{ highlightedHeader3 }}</p>
-        <p class="highlighted-text__copy p-xlarge js-animate-in">{{ highlightedCopy3 }}</p>
-      </div>
-      
+        <div class="highlighted-text__item">
+          <p class="highlighted-text__heading js-animate-in">{{ highlightedHeader3 }}</p>
+          <p class="highlighted-text__copy p-xlarge js-animate-in">{{ highlightedCopy3 }}</p>
+        </div>
+      {% endif %}
     </div>
   </div>
 </section>

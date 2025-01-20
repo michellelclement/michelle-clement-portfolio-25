@@ -13,9 +13,13 @@
 
 .highlighted-text__grid {
   @include grid;
-  @include rowGap(calc($gtr*2));
+  @include rowGap(calc($gtr*4));
 }
 
 .highlighted-text__item {
   grid-column: 1 / span 11;
+}
+
+.highlighted-text__button {
+ margin-top: $gtr; 
 }
