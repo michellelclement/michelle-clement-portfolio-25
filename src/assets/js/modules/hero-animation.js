@@ -79,15 +79,6 @@ function heroAnimation() {
     repeat: -1,             // Repeat the animation indefinitely
     repeatDelay: 2,         // Add a 2-second delay between each repeat
   });
-
-  //Hero SVG animation
-  gsap.to("#flower4-path", {
-    duration: 2,
-    morphSVG: "#flower8-path", // Target shape
-    ease: "power1.inOut",      // Smooth easing
-    transformOrigin: "50% 50%" // Set morph origin to the center
-  });
 }
-
 
 export default heroAnimation;
