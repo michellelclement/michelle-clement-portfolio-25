@@ -6,6 +6,10 @@
   @include verticalPadding;
 }
 
+.article__heading {
+  grid-column: 1 / span 11;
+}
+
 .articles__grid {
   display: flex;
   flex-direction: column;
@@ -16,7 +20,6 @@
     @include colGap(calc($gtr * 2));
     @include rowGap(calc($gtr * 2));
   }
-    
 }
 
 .article__item {
@@ -27,6 +30,11 @@
   transition: all 500ms;
   overflow: hidden;
 
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 
   @include media($s-screen-up) {
     @include col(6);

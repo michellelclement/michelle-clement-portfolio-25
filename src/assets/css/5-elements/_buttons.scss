@@ -16,6 +16,7 @@
   -webkit-transition: background-color 300ms ease-out;
   transition: background-color 200ms ease-out;
   font-size: 20px;
+  cursor: pointer;
 
   @include media($xl-screen-up) {
     font-size: 20px;

@@ -2,10 +2,29 @@
   <div class="text-section__container">
     <div class="text-section__grid">
       <p class="text-section__intro p-large js-animate-in">{{ openingText }}</p>
-      <div class="text-section__copy js-animate-in">
-        <p>{{ mainText }}</p>
-        <p>{{ introCopyTwo }}</p>
-      </div>
+      {% if mainText %}
+        <div class="text-section__copy js-animate-in">
+          <p>{{ mainText }}</p>
+          {% if mainText2 %}
+            <p>{{ mainText2 }}</p>
+          {% endif %}
+          {% if mainText3 %}
+            <p>{{ mainText3 }}</p>
+          {% endif %}
+          {% if mainText4 %}
+            <p>{{ mainText4 }}</p>
+          {% endif %}
+          {% if textSectionButtonText %}
+            <a href="{{ textSectionButtonUrl }}" class="button text-section__button js-animate-in">
+              <span>{{ textSectionButtonText }}
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32">
+                  <path stroke="#33272a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.333 22.667 22.667 9.333M9.333 9.333h13.334v13.334"/>
+                </svg>
+              </span>
+            </a>
+          {% endif %}
+        </div>
+      {% endif %}
     </div>
   </div>
 </section>

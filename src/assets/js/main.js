@@ -6,11 +6,11 @@ import 'focus-visible'
 // Internal Modules
 import toggleBodyScroll from './modules/nav';
 import heroAnimation from './modules/hero-animation';
-import textAnimation from './modules/text-animation';
+import contentAnimations from './modules/content-animations';
 
 toggleBodyScroll();
 heroAnimation();
-textAnimation();
+contentAnimations();
 
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {

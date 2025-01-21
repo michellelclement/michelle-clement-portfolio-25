@@ -7,21 +7,21 @@
 }
 
 .columns__grid {
-  @include grid(3);
+  @include grid;
   @include rowGap(calc($gtr *3));
 
-  @include media($m-screen-up) { 
+  @include media($l-screen-up) { 
     @include colGap(calc($gtr *4));
   }
 }
 
 .column__item {
-  @include col(3);
+  @include col;
   position: relative;
   text-align: center;
   @include flowV(calc($gtr/2));
 
-  @include media($m-screen-down) {
+  @include media($l-screen-down) {
     &:not(:last-child)::after {
       content: '';
       position: absolute;
@@ -34,9 +34,9 @@
     }
   }
 
-  @include media($m-screen-up) {
+  @include media($l-screen-up) {
     @include flowV;
-    @include col(1);
+    @include col(6);
     &:not(:last-child)::after {
       content: '';
       position: absolute;
