@@ -1,18 +1,19 @@
 import { gsap } from "gsap-trial";
-
 import { SplitText } from "gsap-trial/SplitText";
 import { MorphSVGPlugin } from "gsap-trial/MorphSVGPlugin";
 
 gsap.registerPlugin(SplitText, MorphSVGPlugin);
 
 function heroAnimation() {
-
-  //Hero text animation
-  const splitText = new SplitText(".js-hero-heading", { type: "chars" });
+  // Check if it's the about page by class
+  const targetClass = document.querySelector(".js-hero-heading-about") ? ".js-hero-heading-about" : ".js-hero-heading";
+  
+  // Split text for the header based on the selected class
+  const splitText = new SplitText(targetClass, { type: "chars" });
 
   // Create a timeline to control the sequence of animations
   const tl = gsap.timeline();
-  
+
   // Loop through each character
   splitText.chars.forEach((char, index) => {
     const animations = [
@@ -68,9 +69,10 @@ function heroAnimation() {
     randomAnimation(char, index);
   });
 
-  // After the animations complete, target a specific character (e.g., the 3rd character)
-  const targetCharIndex = 1; // Change this to target a different character (e.g., 2nd character = index 1)
+  // Set the target character index dynamically based on the page
+  const targetCharIndex = targetClass === ".js-hero-heading-about" ? 3 : 1;
 
+  // After the animations complete, target a specific character (e.g., the 3rd character)
   // Add a spinning animation every 2 seconds for the selected character
   tl.to(splitText.chars[targetCharIndex], {
     duration: 2,            // Duration of each spin
