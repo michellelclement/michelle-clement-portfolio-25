@@ -5,10 +5,10 @@ import 'focus-visible'
 
 // Internal Modules
 import toggleBodyScroll from './modules/nav';
-import textAnimation from './modules/text-animation';
+import contentAnimations from './modules/content-animations';
 
 toggleBodyScroll();
-textAnimation();
+contentAnimations();
 
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {

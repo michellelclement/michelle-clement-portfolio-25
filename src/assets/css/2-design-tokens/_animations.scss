@@ -7,3 +7,12 @@
     opacity: 1;
   }
 }
+
+.js-card-animate-in {
+  opacity: 0;
+  transform: translateY(45px);
+
+  .no-js & {
+    opacity: 1;
+  }
+}

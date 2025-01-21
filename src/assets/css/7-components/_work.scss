@@ -8,6 +8,8 @@
 .work__container {
   @include verticalPadding;
   @include horizontalContainer;
+  // background-color: $secondary;
+  // border-radius: 30px;
 }
 
 .work__heading {
