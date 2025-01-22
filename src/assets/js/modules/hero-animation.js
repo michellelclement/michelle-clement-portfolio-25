@@ -1,6 +1,6 @@
-import { gsap } from "gsap-trial";
-import { SplitText } from "gsap-trial/SplitText";
-import { MorphSVGPlugin } from "gsap-trial/MorphSVGPlugin";
+// import { gsap } from "gsap-trial";
+// import { SplitText } from "gsap-trial/SplitText";
+// import { MorphSVGPlugin } from "gsap-trial/MorphSVGPlugin";
 
 gsap.registerPlugin(SplitText, MorphSVGPlugin);
 
