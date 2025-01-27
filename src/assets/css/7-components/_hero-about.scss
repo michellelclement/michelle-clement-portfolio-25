@@ -31,7 +31,7 @@
 .hero-about__header {
   font-size: 60px;
 
-  @include media($m-screen-up) {
+  @include media($s-screen-up) {
     grid-column: 1 / span 4;
     font-size: var(--fluid-5);
   }
@@ -43,19 +43,25 @@
   justify-content: center;
   align-items: center;
   height: auto; 
+
+  @include media($m-screen-up) {
+    grid-column: 7 / span 4;
+    grid-row: 1;
+  }
+
+  @include media($l-screen-up) {
+    grid-column: 5 / span 4;
+    grid-row: 1;
+  }
 }
 
 .hero-about__cta {
   grid-row: 3;
   grid-column: 1 / span 12;
   padding-bottom: calc(#{$gtr} * 2);
-  grid-column: 1 / span 4;
 
   @include media($l-screen-up) {
     grid-column: 10 / span 4;
-  }
-
-  @include media($l-screen-up) {
     margin-top: rem(-60);
   }
 
