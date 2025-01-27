@@ -7,14 +7,20 @@
 
 .hero-about__container {
   @include horizontalContainer;
-  padding-top: calc(#{$gtr} * 3);
+  padding-top: $gtr;
   padding-bottom: calc(#{$gtr} * 3);
+
+  @include media($m-screen-up) {
+    padding-top: calc(#{$gtr} * 3);
+    padding-bottom: calc(#{$gtr} * 3);
+  }
 }
 
 .hero-about__grid {
   display: flex;
   flex-direction: column;
   gap: $gtr;
+  @include rowGap(calc($gtr*1));
 
   @include media($m-screen-up) {
     @include grid;
@@ -24,9 +30,11 @@
 }
 
 .hero-about__header {
+  font-size: 60px;
 
   @include media($m-screen-up) {
     grid-column: 1 / span 4;
+    font-size: var(--fluid-5);
   }
 }
 
