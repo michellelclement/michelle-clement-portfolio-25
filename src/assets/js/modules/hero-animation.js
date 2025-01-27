@@ -1,8 +1,7 @@
-// import { gsap } from "gsap-trial";
-// import { SplitText } from "gsap-trial/SplitText";
-// import { MorphSVGPlugin } from "gsap-trial/MorphSVGPlugin";
+import { gsap } from "gsap";
+import { SplitText } from "gsap/SplitText";
 
-gsap.registerPlugin(SplitText, MorphSVGPlugin);
+gsap.registerPlugin(SplitText);
 
 function heroAnimation() {
   // Check if it's the about page by class

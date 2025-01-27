@@ -9,7 +9,7 @@ import heroAnimation from './modules/hero-animation';
 import contentAnimations from './modules/content-animations';
 
 toggleBodyScroll();
-// heroAnimation();
+heroAnimation();
 contentAnimations();
 
 // Wait for the DOM to be fully loaded
