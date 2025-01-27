@@ -4,7 +4,7 @@
 
 .hero-home {
   position: relative;
-  min-height: 70vh;
+  min-height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -101,7 +101,7 @@
 
 .hero-home__scroll {
   width: 100%;
-  padding-top: calc($gtr*6);
+  padding-top: calc($gtr*4);
 
   @include media($xl-screen-up) {
     padding-top: calc($gtr*3);

@@ -38,31 +38,12 @@
 }
 
 .hero-about__image {
-  display: flex; // If needed
+  display: flex; 
   flex: 0 0 auto;
   justify-content: center;
   align-items: center;
-  height: auto; // Ensure height grows based on content
+  height: auto; 
 }
-
-// .hero-about__image {
-
-//   @include media($m-screen-up) {
-//     grid-column: 5 / span 4;
-//     grid-row: 1;
-//   }
-
-//   .image-oval {
-//     max-height: 350px;
-//     height: 100%;
-//     @include media($s-screen-up) {
-//       min-height: 400px;
-//     }
-//     @include media($m-screen-up) {
-//       min-height: 450px;
-//     }
-//   }
-// }
 
 .hero-about__cta {
   grid-row: 3;
