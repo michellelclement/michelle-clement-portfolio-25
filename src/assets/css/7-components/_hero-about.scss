@@ -19,8 +19,7 @@
 .hero-about__grid {
   display: flex;
   flex-direction: column;
-  gap: $gtr;
-  @include rowGap(calc($gtr*1));
+  gap: calc($gtr*2);
 
   @include media($m-screen-up) {
     @include grid;
@@ -39,21 +38,31 @@
 }
 
 .hero-about__image {
-  @include media($m-screen-up) {
-    grid-column: 5 / span 4;
-    grid-row: 1;
-  }
-
-  .image-oval {
-    max-height: 350px;
-    @include media($s-screen-up) {
-      min-height: 400px;
-    }
-    @include media($m-screen-up) {
-      min-height: 450px;
-    }
-  }
+  display: flex; // If needed
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  height: auto; // Ensure height grows based on content
 }
+
+// .hero-about__image {
+
+//   @include media($m-screen-up) {
+//     grid-column: 5 / span 4;
+//     grid-row: 1;
+//   }
+
+//   .image-oval {
+//     max-height: 350px;
+//     height: 100%;
+//     @include media($s-screen-up) {
+//       min-height: 400px;
+//     }
+//     @include media($m-screen-up) {
+//       min-height: 450px;
+//     }
+//   }
+// }
 
 .hero-about__cta {
   grid-row: 3;
