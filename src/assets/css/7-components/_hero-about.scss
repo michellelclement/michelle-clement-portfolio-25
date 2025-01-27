@@ -37,7 +37,13 @@
   }
 
   .image-oval {
-    max-height: 450px;
+    max-height: 350px;
+    @include media($s-screen-up) {
+      min-height: 400px;
+    }
+    @include media($m-screen-up) {
+      min-height: 450px;
+    }
   }
 }
 
