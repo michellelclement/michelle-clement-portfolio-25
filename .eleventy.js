@@ -121,6 +121,7 @@ export default function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('src/assets/css')
 	eleventyConfig.addPassthroughCopy('src/assets/js')
 	eleventyConfig.addPassthroughCopy('src/assets/images')
+	eleventyConfig.addPassthroughCopy('src/assets/documents')
 
 	return {
 		templateFormats: ['md', 'njk', 'html', 'liquid'],

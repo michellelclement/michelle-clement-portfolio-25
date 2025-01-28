@@ -15,7 +15,6 @@ A clean and fast Eleventy Starter Project with Vite.
 * Critical CSS, generated and inlined via [rollup-plugin-critical](https://github.com/nystudio107/rollup-plugin-critical). The main CSS file is then loaded asynchronously with [Scott Jehl’s `media` loading strategy](https://www.filamentgroup.com/lab/load-css-simpler/) (adds `media="print"` and swaps to `media="all"` once loaded)
 * Example implementation of a web font loading strategy ([critical FOFT with preload](https://www.zachleat.com/web/comprehensive-webfonts/#critical-foft-preload))
 * Basic fluid typography based on [Utopia](https://utopia.fyi)
-* Basic dark mode support (using `prefers-color-scheme` and CSS Custom Properties)
 * Polyfill for [focus-visible](https://matthiasott.com/notes/focus-visible-is-here)
 * RSS feed 🧡
 * XML sitemap
