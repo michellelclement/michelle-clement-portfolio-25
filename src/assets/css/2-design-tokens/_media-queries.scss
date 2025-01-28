@@ -49,15 +49,3 @@ $breakpoints: (
   xl: $xl-screen-up,
   xxl: $xxl-screen-up
 );
-
-// .small-hide {
-//   @include media($m-screen-down) {
-//     display: none;
-//   }
-// }
-
-// .medium-up-hide {
-//   @include media($m-screen-up) {
-//     display: none;
-//   }
-// }
