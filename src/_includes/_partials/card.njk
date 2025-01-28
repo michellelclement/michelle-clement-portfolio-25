@@ -1,9 +1,9 @@
-<a href="{{ post.url | url }}" class="card js-card-animate-in" aria-label="View details about {{ post.data.title }}">
+<a href="{{ post.url | url }}" class="card js-card-animate-in" aria-label="View details about the project {{ post.data.title }}">
   <div class="postlist-link card__image">
     <div class="card__image--container">
       <img class="card__image-img" src="{{ post.data.projectPreviewImg }}" alt="">
       <div class="overlay">
-        <div class="button card__button">
+        <div class="button card__button" aria-hidden="true">
           <span>
             Launch project
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32">
