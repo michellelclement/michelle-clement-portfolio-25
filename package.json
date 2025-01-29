@@ -1,8 +1,8 @@
 {
-  "name": "eleventy-plus-vite",
+  "name": "Michelle Clement Portfolio 2025",
   "version": "1.2.0",
   "type": "module",
-  "description": "A clean and simple Eleventy 2 Starter Kit with Vite",
+  "description": "A clean and simple portfolio website built on an Eleventy Starter Kit with Vite",
   "browserslist": [
     "> 0.5%",
     "not IE 11"
@@ -18,19 +18,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://matthiasott@github.com/matthiasott/11ty22.git"
+    "url": "git+https://github.com/michellelclement/michelle-clement-portfolio-25.git"
   },
-  "author": "Matthias Ott",
+  "author": "Michelle Clement",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/matthiasott/11ty22/issues"
+    "url": "https://github.com/michellelclement/michelle-clement-portfolio-25/issues"
   },
-  "homepage": "https://github.com/matthiasott/11ty22#readme",
+  "homepage": "https://github.com/michellelclement/michelle-clement-portfolio-25/issues#readme",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0-beta.1",
     "@11ty/eleventy-img": "^4.0.2",
     "@11ty/eleventy-navigation": "^0.3.5",
-    "@11ty/eleventy-plugin-rss": "^2.0.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@11ty/eleventy-plugin-vite": "^5.0.0-alpha.1",
     "autoprefixer": "^10.4.20",
