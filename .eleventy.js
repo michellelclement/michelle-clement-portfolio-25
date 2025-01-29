@@ -120,7 +120,7 @@ export default function (eleventyConfig) {
 	// Copy/pass-through files
 	eleventyConfig.addPassthroughCopy('src/assets/css')
 	eleventyConfig.addPassthroughCopy('src/assets/js')
-	eleventyConfig.addPassthroughCopy('src/assets/images')
+	eleventyConfig.addPassthroughCopy({ 'src/assets/images': 'assets/images' });
 	eleventyConfig.addPassthroughCopy('src/assets/documents')
 
 	return {
