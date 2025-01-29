@@ -5,7 +5,7 @@ A clean and fast Eleventy website with Vite based on the starter project by Matt
 
 View the website [here](https://michelleclement.co.uk/)
 
-## Features
+## Features - as per starter file
 
 * Eleventy v3
 * Eleventy Dev Server with live reload
@@ -18,52 +18,3 @@ View the website [here](https://michelleclement.co.uk/)
 * Example implementation of a web font loading strategy ([critical FOFT with preload](https://www.zachleat.com/web/comprehensive-webfonts/#critical-foft-preload))
 * Basic fluid typography based on [Utopia](https://utopia.fyi)
 * Polyfill for [focus-visible](https://matthiasott.com/notes/focus-visible-is-here)
-* RSS feed 🧡
-* XML sitemap
-* Four Hundos Lighthouse score 💯💯💯💯
-
-## Getting started
-
-Start by [generating a new repository based on this project](https://github.com/matthiasott/eleventy-plus-vite/generate).
-
-After cloning (or downloading) the repository to your local machine, install all dependencies with the command
-
-```sh
-npm install
-```
-
-## Run dev server
-
-The project comes with Eleventy’s built-in development server. You can start the server with
-
-```sh
-npm start
-````
-
-or
-
-```sh
-npx @11ty/eleventy --serve
-````
-
-
-## Build
-
-To trigger a production build, use
-
-```sh
-npm run build
-````
-
-or
-
-```sh
-npx @11ty/eleventy
-```
-
-
-
-Website based on the starter project by Matthias Ott.
-* Matthias Ott [github.com/matthiasott/eleventy-plus-vite](https://github.com/matthiasott/eleventy-plus-vite)
-
-Matthias' opinionated Sass structure was left intact as I thought it was fantastic.
