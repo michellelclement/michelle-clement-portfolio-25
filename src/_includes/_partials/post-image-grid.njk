@@ -3,17 +3,21 @@
     <div class="post-image-grid__grid">
       <div class="post-image-grid__image">
         <img src="{{ postImage1 }}" alt="">
-        {# <img src="/assets/images/michelle-photo.png" alt=""> #}
       </div>
       <div class="post-image-grid__image">
         <img src="{{ postImage2 }}" alt="">
       </div>
-      <div class="post-image-grid__image">
-        <img src="{{ postImage3 }}" alt="">
-      </div>
-      <div class="post-image-grid__image">
-        <img src="{{ postImage4 }}" alt="">
-      </div>
+      {% if postImage3 %}
+        <div class="post-image-grid__image">
+          <img src="{{ postImage3 }}" alt="">
+        </div>
+      {% endif %}
+      {% if postImage4 %}
+        <div class="post-image-grid__image">
+          <img src="{{ postImage4 }}" alt="">
+        </div>
+      {% endif %}
+      
     </div>
   </div>
 </section>
