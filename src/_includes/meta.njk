@@ -16,8 +16,7 @@
 <meta property="og:type" content="website">
 
 {%- if image -%}
-    {# <meta property="og:image" content="{{ image | url | absoluteUrl(meta.url) }}"> #}
-    <meta property="og:image" content="https://michelleclementportfolio.netlify.app/assets/images/asra-3.webp">
+    <meta property="og:image" content="{{ image | url | absoluteUrl(meta.url) }}">
     <meta property="og:image:alt" content="{{ imageAlt or 'An image preview of ' ~ (title or meta.title) }}">
     <meta name="twitter:image" content="{{ image | url | absoluteUrl(meta.url) }}">
     <meta name="twitter:image:alt" content="{{ imageAlt or 'An image preview of ' ~ (title or meta.title) }}">
