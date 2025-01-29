@@ -24,5 +24,10 @@ export default {
 
     filterTagList (tags) {
         return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
+    },
+
+    absoluteUrl: (relativeUrl) => {
+    const baseUrl = "https://yourdomain.com"; // Replace with your actual base URL
+    return `${baseUrl}${relativeUrl}`;
     }
 }
