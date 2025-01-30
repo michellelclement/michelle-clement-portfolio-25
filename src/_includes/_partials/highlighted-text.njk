@@ -1,11 +1,9 @@
 <section class="highlighted-text">
   <div class="highlighted-text__container">
     <div class="highlighted-text__grid">
-
       <div class="highlighted-text__item">
         <p class="highlighted-text__heading js-animate-in">{{ highlightedHeader }}</p>
         <p class="highlighted-text__copy p-xlarge js-animate-in">{{ highlightedCopy }}</p>
-        
         {% if buttonCopy %}
           <a href="{{ buttonUrl }}" class="button highlighted-text__button js-animate-in">
             <span>{{ buttonCopy }}
@@ -22,7 +20,8 @@
           <p class="highlighted-text__heading js-animate-in">{{ highlightedHeader2 }}</p>
           <p class="highlighted-text__copy p-xlarge js-animate-in">{{ highlightedCopy2 }}</p>
         </div>
-
+      {% endif %}
+      {% if highlightedHeader3 %}
         <div class="highlighted-text__item">
           <p class="highlighted-text__heading js-animate-in">{{ highlightedHeader3 }}</p>
           <p class="highlighted-text__copy p-xlarge js-animate-in">{{ highlightedCopy3 }}</p>

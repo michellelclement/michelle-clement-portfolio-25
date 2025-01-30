@@ -29,7 +29,7 @@
 }
 
 .hero-about__header {
-  font-size: 60px;
+  font-size: rem(60);
 
   @include media($s-screen-up) {
     grid-column: 1 / span 4;

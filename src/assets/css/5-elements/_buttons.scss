@@ -10,17 +10,13 @@
   border: $border;
   background-color: $button;
   color: $black;
-  padding: 16px 32px;
+  padding: rem(16) rem(32);
   overflow: hidden;
   position: relative;
   -webkit-transition: background-color 300ms ease-out;
   transition: background-color 200ms ease-out;
-  font-size: 20px;
+  font-size: rem(20);
   cursor: pointer;
-
-  @include media($xl-screen-up) {
-    font-size: 20px;
-  }
 }
 
 .button span {

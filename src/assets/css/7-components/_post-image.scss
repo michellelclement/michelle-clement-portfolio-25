@@ -44,25 +44,25 @@
 }
 
 .post-image__outline-second {
-  top: 4px;
-  left: 4px;
+  top: rem(4);
+  left: rem(4);
   z-index: 2;
   background-color: $tertiary;
 
   @include media($m-screen-up) {
-    top: 13px;
-    left: 13px;
+    top: rem(13);
+    left: rem(13);
   }
 }
 
 .post-image__outline-third {
-  top: 12px;
-  left: 12px;
+  top: rem(12);
+  left: rem(12);
   z-index: 1;
   background-color: $black;
 
   @include media($m-screen-up) {
-    top: 35px;
-    left: 35px;
+    top: rem(35);
+    left: rem(35);
   }
 }

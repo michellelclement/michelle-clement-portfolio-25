@@ -35,11 +35,11 @@
 
 .hero-post__header-1 {
   @include media($m-screen-down) {
-    font-size: 80px;
+    font-size: rem(80);
   }
 
   @include media($xs-screen-down) {
-    font-size: 55px;
+    font-size: rem(55);
   }
 
   @include media($m-screen-up) {

@@ -1,5 +1,6 @@
 @use '../2-design-tokens/colors' as *;
+@use '../2-design-tokens/functions' as *;
 
 // Borders
-$border-radius: 30px;
+$border-radius: rem(30);
 $border: 4px solid $black;

@@ -17,19 +17,15 @@
 .hero-home h1 {
   
   @include media($s-screen-up) {
-    font-size: 100px;
-  }
-
-  @include media($m-screen-up) {
-    font-size: 100px;
+    font-size: rem(100);
   }
 
   @include media($l-screen-up) {
-    font-size: 130px;
+    font-size: rem(130);
   }
 
   @include media($xl-screen-up) {
-    font-size: 170px;
+    font-size: rem(170);
   }
 }
 
@@ -61,15 +57,15 @@
 .hero-home__header-2 {
 
   @include media($m-screen-down) {
-    font-size: 100px;
+    font-size: rem(100);
   }
 
   @include media($s-screen-down) {
-    font-size: 75px;
+    font-size: rem(75);
   }
 
   @include media($xxs-screen-down) {
-    font-size: 55px;
+    font-size: rem(55);
   }
 }
 

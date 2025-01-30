@@ -5,13 +5,13 @@
   z-index: 10; 
   transition: opacity 0.3s ease-out;
   @include horizontalContainer;
-  padding-top: 35px;
+  padding-top: rem(35);
   display: block;
-  font-size: 32px;
+  font-size: rem(32);
   width: 100%;
 
   @include media($m-screen-up) {
-    padding-top: 40px;
+    padding-top: rem(40);
   }
 }
 
@@ -31,32 +31,26 @@
 
 .header__right {
   position: fixed;
-  top: 19px;
-  right: 15px;
-  height: 60px;
-  width: 60px;
+  top: rem(19);
+  right: rem(15);
+  height: rem(60);
+  width: rem(60);
   border-radius: 50%;
   z-index: 15; 
 
   @include media($m-screen-up) {
-    top: 15px;
-    right: 60px;
-    height: 80px;
-    width: 80px;
+    top: rem(15);
+    right: rem(60);
+    height: rem(80);
+    width: rem(80);
   }
 
   @include media($xl-screen-up) {
-    top: 15px;
-    right: 75px;
-    height: 80px;
-    width: 80px;
+    right: rem(75);
   }
 
   @include media($xxl-screen-up) {
-    top: 15px;
-    right: 130px;
-    height: 80px;
-    width: 80px;
+    right: rem(130);
   }
 }
 
