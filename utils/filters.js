@@ -27,7 +27,7 @@ export default {
     },
 
     absoluteUrl: (relativeUrl) => {
-    const baseUrl = "https://michelleclement.co.uk/"; // Replace with your actual base URL
+    const baseUrl = "https://michelleclement.co.uk/";
     return `${baseUrl}${relativeUrl}`;
     }
 }
