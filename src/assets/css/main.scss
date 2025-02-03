@@ -7,7 +7,6 @@
 /* 2. Design Tokens */
 @use "2-design-tokens/colors";
 @use "2-design-tokens/functions";
-@use "2-design-tokens/fonts";
 @use "2-design-tokens/media-queries";
 @use "2-design-tokens/mixins";
 @use "2-design-tokens/spacing";
@@ -30,7 +29,6 @@
 @use "5-elements/headings";
 @use "5-elements/links";
 @use "5-elements/lists";
-@use "5-elements/paragraphs";
 @use "5-elements/divider";
 @use "5-elements/card";
 @use "5-elements/image-oval";
