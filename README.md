@@ -1,7 +1,11 @@
 # Michelle Clement's Portfolio <br>🏃💨
 
+Welcome to my website!
+
 A clean and fast Eleventy website with Vite based on the starter project by Matthias Ott.
 * Matthias Ott [github.com/matthiasott/eleventy-plus-vite](https://github.com/matthiasott/eleventy-plus-vite)
+
+I’m continuously working on improving the UX/UI, design, and features of this website to enhance the user experience and keep things fresh.
 
 View the website [here](https://michelleclement.co.uk/)
 
