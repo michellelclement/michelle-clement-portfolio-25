@@ -9,12 +9,38 @@
   */
 
 h1, h2, h3, h4, h5, h6, p {
+  font-family: var(--font-body);
   margin: 0;
   line-height: 1;
   font-weight: 400;
   color: $heading;
 }
 
+p {
+  margin: 0;
+  font-size: var(--fluid-0); // 20px
+  line-height: 1.4;
+  color: $paragraph;
+  font-weight: 300;
+}
+
+.p-xlarge {
+	font-size: var(--fluid-2); // h3 / 45px
+}
+
+.p-large {
+	font-size: var(--fluid-1); // h4 / 30px
+}
+
+.p-small {
+	font-size: var(--fluid--1); // 18px
+}
+
+span.marker {
+	box-shadow: inset 0 -14px 0 0 rgb(255, 236, 158);
+	line-height: 0.6;
+	display: inline-block;
+}
 
 :root {
   --fluid-min-width: 320;
@@ -23,6 +49,7 @@ h1, h2, h3, h4, h5, h6, p {
   --fluid-max-size: 19;
   --fluid-min-ratio: 1.2;
   --fluid-max-ratio: 1.5;
+  --font-body: 'DM Sans', sans-serif;
 }
 
 :root {
