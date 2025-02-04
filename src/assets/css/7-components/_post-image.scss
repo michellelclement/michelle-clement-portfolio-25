@@ -47,7 +47,7 @@
   top: rem(4);
   left: rem(4);
   z-index: 2;
-  background-color: $tertiary;
+  background-color: $secondary;
 
   @include media($m-screen-up) {
     top: rem(13);
