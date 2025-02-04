@@ -1,18 +1,18 @@
 @use '../2-design-tokens/index' as *;
 @use '../6-skeleton/grid' as *;
 
-.hero-about {
-  min-height: 75vh;
-}
-
 .hero-about__container {
   @include horizontalContainer;
   padding-top: $gtr;
-  padding-bottom: calc(#{$gtr} * 3);
+  padding-bottom: $gtr;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between; 
+  flex-grow: 1;
 
   @include media($m-screen-up) {
     padding-top: calc(#{$gtr} * 3);
-    padding-bottom: calc(#{$gtr} * 3);
+    padding-bottom: $gtr;
   }
 }
 
@@ -29,11 +29,32 @@
 }
 
 .hero-about__header {
-  font-size: rem(60);
+  font-size: rem(140);
+
+  @include media($xs-screen-up) {
+    grid-column: 1 / span 4;
+    font-size: rem(160);
+  }
 
   @include media($s-screen-up) {
     grid-column: 1 / span 4;
-    font-size: var(--fluid-5);
+    font-size: rem(160);
+  }
+
+  @include media($m-screen-up) {
+    font-size: rem(90);
+  }
+
+  @include media($l-screen-up) {
+    font-size: rem(120);
+  }
+
+  @include media($xl-screen-up) {
+    font-size: rem(160);
+  }
+
+  @include media($xxl-screen-up) {
+    font-size: rem(200);
   }
 }
 
@@ -50,6 +71,11 @@
   }
 
   @include media($l-screen-up) {
+    grid-column: 6 / span 4;
+    grid-row: 1;
+  }
+
+  @include media($xl-screen-up) {
     grid-column: 5 / span 4;
     grid-row: 1;
   }
@@ -74,8 +100,4 @@
   @include media($m-screen-up) {
     margin-top: calc(#{$gtr} / 2);
   }
-}
-
-.hero-about__scroll {
-  padding-top: $gtr;
 }

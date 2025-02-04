@@ -1,7 +1,6 @@
 @use '../2-design-tokens/index' as *;
 @use '../6-skeleton/grid' as *;
 
-
 .hero-home {
   position: relative;
   min-height: 65vh;
@@ -20,11 +19,10 @@
   width: 100%;
   padding-top: calc(#{$gtr} * 3);
   padding-bottom: $gtr;
-  
-  display: flex; // Make it a flex container
-  flex-direction: column; // Stack children vertically
-  justify-content: space-between; // Push items apart
-  flex-grow: 1; // Ensure it takes up all available space
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between; 
+  flex-grow: 1;
 
   @include media($xl-screen-up) {
     padding-top: $gtr;
@@ -116,12 +114,3 @@
     justify-self: end;
   }
 }
-
-// .hero-home__scroll {
-//   width: 100%;
-//   padding-top: calc($gtr*4);
-
-//   @include media($xl-screen-up) {
-//     padding-top: calc($gtr*3);
-//   }
-// }
