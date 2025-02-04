@@ -38,7 +38,7 @@
 
   @include media($m-screen-up) {
     @include grid;
-    @include rowGap;
+    gap: 0;
   }
 
   @include media($s-screen-up) {
