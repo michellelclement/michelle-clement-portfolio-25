@@ -7,10 +7,12 @@ import 'focus-visible'
 import toggleBodyScroll from './modules/nav';
 import heroAnimation from './modules/hero-animation';
 import contentAnimations from './modules/content-animations';
+import heroSubAnimation from './modules/hero-sub-animation';
 
 toggleBodyScroll();
 heroAnimation();
 contentAnimations();
+heroSubAnimation();
 
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
