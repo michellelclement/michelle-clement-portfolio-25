@@ -1,6 +1,9 @@
 @use '../6-skeleton/grid' as *;
 @use '../2-design-tokens/index' as *;
 
+.card {
+  text-decoration: none;
+}
 
 .card:nth-child(odd) {
   grid-column: 1 / span 12;
