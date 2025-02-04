@@ -1,7 +1,7 @@
 <section class="text-section">
   <div class="text-section__container">
     <div class="text-section__grid">
-      <p class="text-section__intro p-large js-animate-in">{{ openingText }}</p>
+      <p class="text-section__intro p-large js-animate-in">{{ openingText | safe }}</p>
       {% if mainText %}
         <div class="text-section__copy js-animate-in">
           <p>{{ mainText }}</p>

@@ -29,6 +29,10 @@
   display: none; 
 }
 
+.header__left {
+  text-decoration: none;
+}
+
 .header__right {
   position: fixed;
   top: rem(19);
