@@ -52,6 +52,11 @@
 
   @include media($m-screen-up) {
     grid-row: 2;
+    grid-column: 7 / span 6;
+  }
+
+  @include media($l-screen-up) {
+    grid-row: 2;
     grid-column: 7 / span 5;
   }
 }
