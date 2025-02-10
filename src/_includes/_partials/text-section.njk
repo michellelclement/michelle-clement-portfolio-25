@@ -4,21 +4,21 @@
       <p class="text-section__intro p-large js-animate-in">{{ openingText | safe }}</p>
       {% if mainText %}
         <div class="text-section__copy js-animate-in">
-          <p>{{ mainText }}</p>
+          <p>{{ mainText | safe }}</p>
           {% if mainText2 %}
-            <p>{{ mainText2 }}</p>
+            <p>{{ mainText2 | safe }}</p>
           {% endif %}
           {% if mainText3 %}
-            <p>{{ mainText3 }}</p>
+            <p>{{ mainText3 | safe }}</p>
           {% endif %}
           {% if mainText4 %}
-            <p>{{ mainText4 }}</p>
+            <p>{{ mainText4 | safe }}</p>
           {% endif %}
            {% if mainText5 %}
-            <p>{{ mainText5 }}</p>
+            <p>{{ mainText5 | safe }}</p>
           {% endif %}
            {% if mainText6 %}
-            <p>{{ mainText6 }}</p>
+            <p>{{ mainText6 | safe }}</p>
           {% endif %}
           {% if textSectionButtonText %}
             <a href="{{ textSectionButtonUrl }}" class="button text-section__button js-animate-in">

@@ -17,14 +17,14 @@
       
       {% if highlightedHeader2 %}
         <div class="highlighted-text__item">
-          <p class="highlighted-text__heading js-animate-in">{{ highlightedHeader2 }}</p>
-          <p class="highlighted-text__copy p-xlarge js-animate-in">{{ highlightedCopy2 }}</p>
+          <p class="highlighted-text__heading js-animate-in">{{ highlightedHeader2 | safe }}</p>
+          <p class="highlighted-text__copy p-xlarge js-animate-in">{{ highlightedCopy2 | safe }}</p>
         </div>
       {% endif %}
       {% if highlightedHeader3 %}
         <div class="highlighted-text__item">
-          <p class="highlighted-text__heading js-animate-in">{{ highlightedHeader3 }}</p>
-          <p class="highlighted-text__copy p-xlarge js-animate-in">{{ highlightedCopy3 }}</p>
+          <p class="highlighted-text__heading js-animate-in">{{ highlightedHeader3 | safe }}</p>
+          <p class="highlighted-text__copy p-xlarge js-animate-in">{{ highlightedCopy3 | safe }}</p>
         </div>
       {% endif %}
     </div>
