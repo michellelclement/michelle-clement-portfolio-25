@@ -40,6 +40,8 @@ input[type='checkbox']:checked ~ .menu {
 }
 
 .menu__item {
+  @include hoverUnderline;
+
   &--active {
     font-weight: 900;
   }

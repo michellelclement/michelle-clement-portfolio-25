@@ -3,6 +3,7 @@
 
 .footer {
   width: 100%;
+  font-weight: 600;
 }
 
 .footer__container {
@@ -24,4 +25,9 @@
   flex-direction: row;
   gap: $gtr;
   margin: 0;
+
+  li a {
+    text-decoration: none;
+    @include hoverUnderline;
+  }
 }
