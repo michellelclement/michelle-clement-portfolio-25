@@ -38,7 +38,7 @@ export default function (eleventyConfig) {
 				middlewareMode: true,
 			},
 			appType: 'custom',
-			assetsInclude: ['**/*.xml', '**/*.txt'],
+			assetsInclude: ['**/*.xml', '**/*.txt', '**/*.pdf', '**/*.docx'],
 			build: {
 				mode: 'production',
 				sourcemap: 'true',
