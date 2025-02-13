@@ -1,6 +1,10 @@
 @use '../2-design-tokens/index' as *;
 @use '../6-skeleton/grid' as *;
 
+.hero-about {
+  min-height: 75vh;
+}
+
 .hero-about__container {
   @include horizontalContainer;
   padding-top: $gtr;

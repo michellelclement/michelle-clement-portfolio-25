@@ -8,10 +8,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  @include media($m-screen-up) {
-    height: 80vh;
-  }
 }
 
 .hero-post__container {

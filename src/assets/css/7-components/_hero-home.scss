@@ -10,7 +10,7 @@
   flex-grow: 1;
 
   @include media($m-screen-up) {
-    height: 80vh;
+    min-height: 80vh;
   }
 }
 
