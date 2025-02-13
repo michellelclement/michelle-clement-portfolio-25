@@ -21,7 +21,7 @@ export default function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('public');
 	eleventyConfig.addPassthroughCopy('src/assets/css');
 	eleventyConfig.addPassthroughCopy('src/assets/js');
-	eleventyConfig.addPassthroughCopy({ "src/assets/documents": "assets/documents" });
+	eleventyConfig.addPassthroughCopy('src/assets/documents');
 
 	// Plugins
 	eleventyConfig.addPlugin(EleventyPluginNavigation);
