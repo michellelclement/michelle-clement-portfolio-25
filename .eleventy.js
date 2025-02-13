@@ -16,7 +16,8 @@ export default function (eleventyConfig) {
 	
 	// ✅ Ensure images and favicons are copied before Vite runs
 	eleventyConfig.addPassthroughCopy({ "src/assets/images": "assets/images" });
-
+	eleventyConfig.addPassthroughCopy({ "src/assets/documents": "assets/documents" });
+	
 	// Copy static files
 	eleventyConfig.addPassthroughCopy('public');
 	eleventyConfig.addPassthroughCopy('src/assets/css');
