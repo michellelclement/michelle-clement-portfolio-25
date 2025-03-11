@@ -2,7 +2,6 @@ import markdownIt from 'markdown-it'
 import markdownItAnchor from 'markdown-it-anchor'
 
 import EleventyPluginNavigation from '@11ty/eleventy-navigation'
-// import EleventyPluginRss from '@11ty/eleventy-plugin-rss'
 import EleventyPluginSyntaxhighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 import EleventyVitePlugin from '@11ty/eleventy-plugin-vite'
 
@@ -120,7 +119,7 @@ export default function (eleventyConfig) {
 	eleventyConfig.addLayoutAlias('base', 'base.njk')
 	eleventyConfig.addLayoutAlias('post', 'post.njk')
 
-	// Copy/pass-through files
+	// Copy static assets to _site/assets/
 	eleventyConfig.addPassthroughCopy('src/assets/css')
 	eleventyConfig.addPassthroughCopy('src/assets/js')
 
@@ -130,7 +129,6 @@ export default function (eleventyConfig) {
 		passthroughFileCopy: true,
 		dir: {
 			input: 'src',
-			// better not use "public" as the name of the output folder (see above...)
 			output: '_site',
 			includes: '_includes',
 			layouts: 'layouts',
