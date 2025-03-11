@@ -80,17 +80,17 @@ export default function (eleventyConfig) {
 		}
 	})
 
-	// Filters
+	// Filters - TODO - Remove?
 	Object.keys(filters).forEach((filterName) => {
 		eleventyConfig.addFilter(filterName, filters[filterName])
 	})
 
-	// Transforms
+	// Transforms - TODO - Remove?
 	Object.keys(transforms).forEach((transformName) => {
 		eleventyConfig.addTransform(transformName, transforms[transformName])
 	})
 
-	// Shortcodes
+	// Shortcodes - TODO - Remove?
 	Object.keys(shortcodes).forEach((shortcodeName) => {
 		eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName])
 	})
@@ -98,10 +98,13 @@ export default function (eleventyConfig) {
 	eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`)
 
 	// Customize Markdown library and settings:
+	//Enables HTML support in Markdown.
+	// Converts line breaks (\n) into actual <br> tags.
 	let markdownLibrary = markdownIt({
 		html: true,
 		breaks: true,
 		linkify: true
+		//Adds anchor links (#) to headers
 	}).use(markdownItAnchor, {
 		permalink: markdownItAnchor.permalink.ariaHidden({
 			placement: 'after',
